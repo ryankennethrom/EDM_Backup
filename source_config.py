@@ -1,16 +1,10 @@
-from config_utils import get_config, overwrite_config
-from dir_utils import pick_folder
+from singleton import Singleton
+from utils.config_utils import get_config, overwrite_config
+from utils.dir_utils import pick_folder
 import os
 
-class SOURCE:
-    _instance = None
-
-    def __new__(cls, *args, **kwargs):
-        if cls._instance is None:
-            cls._instance = super().__new__(cls)
-        return cls._instance
-
-    def get(self):
+class SOURCE_CONFIG(Singleton):
+    def get_save_return(self):
         config = get_config()
 
         if "SOURCE" not in config or not os.path.isdir(config["SOURCE"]):
