@@ -1,2 +1,45 @@
-2025-12-24 04:52:55 - INFO - ========== PROGRAM START ==========
-2025-12-24 04:52:55 - INFO - Backing up 33 files from C:/Users/ryanr/Documents/DummySRC
+2025-12-24 05:05:14 - INFO - ========== PROGRAM START ==========
+2025-12-24 05:05:14 - INFO - Backing up files from C:/Users/ryanr/Documents/DummySRC
+2025-12-24 05:05:14 - INFO - Backed up a total of 0 files
+2025-12-24 05:05:22 - INFO - ========== PROGRAM START ==========
+2025-12-24 05:05:22 - INFO - Backing up files from C:/Users/ryanr/Documents/DummySRC
+2025-12-24 05:05:22 - INFO - Backed up a total of 0 files
+2025-12-24 05:05:33 - INFO - ========== PROGRAM START ==========
+2025-12-24 05:05:33 - INFO - Backing up files from C:/Users/ryanr/Documents/DummySRC
+2025-12-24 05:05:33 - INFO - Backed up a total of 0 files
+2025-12-24 05:16:24 - INFO - ========== PROGRAM START ==========
+2025-12-24 05:16:24 - INFO - Backing up files from C:/Users/ryanr/Documents/DummySRC
+2025-12-24 05:16:24 - INFO - Backing up C:\Users\ryanr\Documents\DummySRC\Uwu.txt
+2025-12-24 05:16:24 - INFO - Resolving directory
+2025-12-24 05:16:24 - INFO - No Path --- DestinationConfig ---> C:/Users/ryanr/Documents/DummyDST
+2025-12-24 05:16:24 - INFO - Resolving filename
+2025-12-24 05:16:24 - INFO - C:/Users/ryanr/Documents/DummyDST --- DestinationConfig ---> C:/Users/ryanr/Documents/DummyDST\Uwu.txt
+2025-12-24 05:16:24 - INFO - Backing up from C:\Users\ryanr\Documents\DummySRC\Uwu.txt to C:/Users/ryanr/Documents/DummyDST\Uwu.txt
+2025-12-24 05:16:24 - INFO - Backed up a total of 1 files
+2025-12-24 05:18:41 - INFO - ========== PROGRAM START ==========
+2025-12-24 05:18:41 - INFO - Backing up files from C:/Users/ryanr/Documents/DummySRC
+2025-12-24 05:18:41 - INFO - Backing up C:\Users\ryanr\Documents\DummySRC\Havana.txt
+2025-12-24 05:18:41 - INFO - Resolving directory
+2025-12-24 05:18:41 - INFO - No Path ===DestinationConfig===> C:/Users/ryanr/Documents/DummyDST
+2025-12-24 05:18:41 - INFO - Resolving filename
+2025-12-24 05:18:41 - INFO - C:/Users/ryanr/Documents/DummyDST ===ReplaceFilesConfig===> C:/Users/ryanr/Documents/DummyDST\Havana.txt
+2025-12-24 05:18:41 - INFO - Backing up from C:\Users\ryanr\Documents\DummySRC\Havana.txt to C:/Users/ryanr/Documents/DummyDST\Havana.txt
+2025-12-24 05:18:41 - INFO - Backed up a total of 1 files
+2025-12-24 05:19:55 - INFO - ========== PROGRAM START ==========
+2025-12-24 05:19:55 - INFO - Backing up files from C:/Users/ryanr/Documents/DummySRC
+2025-12-24 05:19:55 - INFO - Backing up C:\Users\ryanr\Documents\DummySRC\Havana.txt
+2025-12-24 05:19:55 - INFO - Resolving directory
+2025-12-24 05:19:55 - INFO - No Path ===DestinationConfig===> C:/Users/ryanr/Documents/DummyDST
+2025-12-24 05:19:55 - INFO - Resolving filename
+2025-12-24 05:19:55 - INFO - C:/Users/ryanr/Documents/DummyDST ===ReplaceFilesConfig===> C:/Users/ryanr/Documents/DummyDST\Havana(1).txt
+2025-12-24 05:19:55 - INFO - Backing up from C:\Users\ryanr\Documents\DummySRC\Havana.txt to C:/Users/ryanr/Documents/DummyDST\Havana(1).txt
+2025-12-24 05:19:55 - INFO - Backed up a total of 1 files
+2025-12-24 05:21:08 - INFO - ========== PROGRAM START ==========
+2025-12-24 05:21:08 - INFO - Backing up files from C:/Users/ryanr/Documents/DummySRC
+2025-12-24 05:21:08 - INFO - Backing up C:\Users\ryanr\Documents\DummySRC\Havana.txt
+2025-12-24 05:21:08 - INFO - Resolving directory
+2025-12-24 05:21:08 - INFO - No Path ===DestinationConfig===> C:/Users/ryanr/Documents/DummyDST
+2025-12-24 05:21:08 - INFO - Resolving filename
+2025-12-24 05:21:08 - INFO - C:/Users/ryanr/Documents/DummyDST ===ReplaceFilesConfig===> C:/Users/ryanr/Documents/DummyDST\Havana(2).txt
+2025-12-24 05:21:08 - INFO - Backing up from C:\Users\ryanr\Documents\DummySRC\Havana.txt to C:/Users/ryanr/Documents/DummyDST\Havana(2).txt
+2025-12-24 05:21:08 - INFO - Backed up a total of 1 files

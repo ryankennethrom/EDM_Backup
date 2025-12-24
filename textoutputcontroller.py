@@ -1,12 +1,13 @@
 import logging
 import os
 import sys
-from datetime import datetime
+from logging.handlers import TimedRotatingFileHandler
 
 # ================= CONFIG =================
 WRITE_LOGS = True
 WRITE_TO_TERMINAL = True
 LOG_FILENAME = "backup.log"
+DAYS_TO_KEEP = 7
 # =========================================
 
 
@@ -25,10 +26,13 @@ def setup_logging():
     handlers = []
 
     if WRITE_LOGS:
-        file_handler = logging.FileHandler(
+        file_handler = TimedRotatingFileHandler(
             log_path,
-            mode="w",  # 🔥 overwrite every run
-            encoding="utf-8"
+            when="midnight",      # rotate daily
+            interval=1,
+            backupCount=DAYS_TO_KEEP,  # 🔥 keep last 7 logs
+            encoding="utf-8",
+            utc=False
         )
         file_handler.setLevel(logging.INFO)
         handlers.append(file_handler)
@@ -50,12 +54,8 @@ def setup_logging():
 setup_logging()
 
 def info(text):
-    if WRITE_LOGS or WRITE_TO_TERMINAL:
-        logging.info(text)
+    logging.info(text)
 
 
 def error(text):
-    if WRITE_LOGS or WRITE_TO_TERMINAL:
-        logging.error(text)
-
-
+    logging.error(text)

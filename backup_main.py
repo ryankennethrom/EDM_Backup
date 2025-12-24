@@ -20,7 +20,11 @@ if __name__ == "__main__":
             
             dst_path = ""
 
+            toc.info(f"Resolving directory")
+            
+            to_log = "No Path"
             for dir_config in DIRECTORY_CONFIGS:
+                to_log += f" ==={dir_config.__class__.__name__}"
                 resolved_dst = dir_config.resolve(name, dst_path)
                 if not resolved_dst.startswith(dst_path):
                     raise Exception(
@@ -31,8 +35,15 @@ if __name__ == "__main__":
                             f"Output path: {resolved_dst}\n"
                     )
                 dst_path = resolved_dst
+                to_log += f"===> {dst_path}"
             
+            toc.info(to_log)
+
+            toc.info(f"Resolving filename")
+            
+            to_log = dst_path
             for name_config in NAME_CONFIGS:
+                to_log += f" ==={name_config.__class__.__name__}"
                 name_resolved_dst = name_config.resolve(name, dst_path)
                 if not name_resolved_dst.startswith(dst_path):
                     raise Exception(
@@ -42,7 +53,11 @@ if __name__ == "__main__":
                             f"Output path: {named_resolved_dst}"
                     )
                 dst_path = name_resolved_dst
+                to_log += f"===> {dst_path}"
             
+            toc.info(to_log)
+
+            toc.info(f"Backing up from {src_path} to {dst_path}") 
             shutil.move(src_path, dst_path)
             count += 1
         toc.info(f"Backed up a total of {count} files")
