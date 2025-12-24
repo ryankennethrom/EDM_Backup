@@ -1,11 +1,13 @@
 import os
 from utils.config_utils import get_config, overwrite_config
 from singleton import Singleton
+from typing import final
 
 class BackupPathConfig(Singleton):
+    @final
     def __init__(self):
         self.config_key = self.__class__.__name__
-        
+    @final    
     def resolve(self, source_file_name, prov_dst_dir):
         config = get_config()
         if self.config_key not in config:

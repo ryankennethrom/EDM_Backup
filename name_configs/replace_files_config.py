@@ -1,4 +1,9 @@
-class ReplaceFilesConfig():
+from templates import BackupPathConfig
+from .registry import register
+import os
+
+@register
+class ReplaceFilesConfig(BackupPathConfig):
     def get_unique_path(self, dst_dir, filename):
         base, ext = os.path.splitext(filename)
         counter = 1
@@ -21,9 +26,12 @@ class ReplaceFilesConfig():
         else:
             return "false"
 
-    def resolve(self, source_filename, prov_dst_dir):
-        if self.config_value == "true":
-            return os.path.join(prov_dst_dir, source_filename)
+    def resolve_helper(self, source_filename, prov_dst_dir, config_value):
+        if config_value == "true":
+            dst_path = os.path.join(prov_dst_dir, source_filename)
+            if os.path.isfile(dst_path):
+                os.remove(dst_path)
+            return dst_path
         else:
-            return get_unique_path(prov_dst_dir, source_filename)
+            return self.get_unique_path(prov_dst_dir, source_filename)
 

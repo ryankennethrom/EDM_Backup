@@ -1,5 +1,6 @@
 from .registry import register
 from templates import BackupPathConfig
+from utils.dir_utils import pick_folder
 
 @register
 class DestinationConfig(BackupPathConfig):
