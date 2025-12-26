@@ -1,13 +1,12 @@
-from .registry import register
 from templates import Config
+from .registry import register
 from utils.dir_utils import pick_folder
 
 @register
-class DestinationConfig(Config):
+class DefaultDestinationConfig(Config):
     def prompt_config(self):
         answer = input(
-            "Script doesn't know where to back up files.\n"
-            "Assign destination folder? [Enter Y/n]: "
+            "Assign a default destination folder ? [Enter Y/n] "
         ).strip().lower()
 
         if answer in ("", "y", "yes"):
@@ -15,10 +14,14 @@ class DestinationConfig(Config):
 
             if not dst:
                 raise SystemExit("No destination folder selected. Exiting.")
-            
+
             return dst
         else:
             raise SystemExit("Destination folder not set. Exiting.")
+        
+        return dst
 
     def resolve_helper(self, source_filename, prov_dst_dir, config_value):
+        if prov_dst_dir != "":
+            return prov_dst_dir
         return config_value

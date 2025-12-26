@@ -10,9 +10,8 @@ def load_registry():
     global DIRECTORY_CONFIGS
 
     # Import your resolvers here. Order matters.
-    from . import destination_config
-
-
+    from . import prefix_destination_config 
+    from . import default_destination_config
 
     
     instantiated = []
