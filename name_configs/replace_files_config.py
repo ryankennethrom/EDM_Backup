@@ -26,7 +26,7 @@ class ReplaceFilesConfig(Config):
         else:
             return "false"
 
-    def resolve_helper(self, source_filename, prov_dst_dir, config_value):
+    def resolve_helper(self, source_filename, source_filepath, prov_dst_dir, config_value):
         if config_value == "true":
             dst_path = os.path.join(prov_dst_dir, source_filename)
             if os.path.isfile(dst_path):

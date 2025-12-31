@@ -61,7 +61,7 @@ class PrefixDestinationConfig(Config):
         # Return as string for storage
         return str(table)
 
-    def resolve_helper(self, source_filename, prov_dst_dir, config_value):
+    def resolve_helper(self, source_filename, source_filepath, prov_dst_dir, config_value):
         config = ast.literal_eval(config_value)
         for key, folder in config.items():
             if source_filename.startswith(key):

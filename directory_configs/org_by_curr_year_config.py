@@ -11,7 +11,7 @@ class OrganizeByCurrentYearConfig(Config):
         answer = input("Organize files by current year? [Enter Y/n]: ").strip().lower()
         return answer in ("", "y", "yes")
 
-    def resolve_helper(self, source_filename, prov_dst_dir, config_value):
+    def resolve_helper(self, source_filename, source_filepath, prov_dst_dir, config_value):
         enabled = (
             config_value
             if isinstance(config_value, bool)

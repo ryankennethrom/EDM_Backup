@@ -17,10 +17,10 @@ if __name__ == "__main__":
         import os
         import shutil
 
-        def isFileSkip(source_filename, prov_dst_dir):
+        def isFileSkip(source_filename, source_filepath, rov_dst_dir):
             toc.info(f"Resolving file inclusion")
             for config in SKIP_CONFIGS:
-                if config.resolve(source_filename, prov_dst_dir) == True:
+                if config.resolve(source_filename, source_filepath, prov_dst_dir) == True:
                     toc.info(f"Skipping {source_filename} because of {config.__class__.__name__}")
                     return True
             return False
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     try:
         sources = []
         for config in SOURCE_CONFIGS:
-            new_srcs = config.resolve(None, None)
+            new_srcs = config.resolve(None, None, None)            
             sources += new_srcs
 
         for src in sources:
@@ -55,7 +55,7 @@ if __name__ == "__main__":
                 to_log = ""
                 for dir_config in DIRECTORY_CONFIGS:
                     to_log += f" ==={dir_config.__class__.__name__}"
-                    resolved_dst = dir_config.resolve(name, dst_path)
+                    resolved_dst = dir_config.resolve(name, src_path, dst_path)
                     if not resolved_dst.startswith(dst_path):
                         raise Exception(
                                 f"One of your directory configs is overwriting previous config's changes."
@@ -74,7 +74,7 @@ if __name__ == "__main__":
                 to_log = dst_path
                 for name_config in NAME_CONFIGS:
                     to_log += f" ==={name_config.__class__.__name__}"
-                    name_resolved_dst = name_config.resolve(name, dst_path)
+                    name_resolved_dst = name_config.resolve(name, src_path, dst_path)
                     if not name_resolved_dst.startswith(dst_path):
                         raise Exception(
                                 f"One of your name configs is overwriting previous config's changes."
@@ -87,7 +87,7 @@ if __name__ == "__main__":
                 
                 toc.info(to_log)
 
-                if isFileSkip(name, dst_path):
+                if isFileSkip(name, src_path, dst_path):
                     continue
 
                 toc.info(f"Backing up from {src_path} to {dst_path}") 

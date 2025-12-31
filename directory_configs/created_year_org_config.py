@@ -23,7 +23,7 @@ class OrganizeByCreatedYearConfig(Config):
             return prov_dst_dir
 
         created_year = datetime.fromtimestamp(os.path.getctime(source_filepath)).year
-i
+
         year_dir = os.path.join(prov_dst_dir, str(created_year)) 
         os.makedirs(year_dir, exist_ok=True)
 

@@ -170,7 +170,7 @@ imports:
  &#8226;   <a href="#re._parser">re._parser</a>
  &#8226;   <a href="#reprlib">reprlib</a>
  &#8226;   <a href="#skip_configs.registry">skip_configs.registry</a>
- &#8226;   <a href="#source_config">source_config</a>
+ &#8226;   <a href="#source_configs.registry">source_configs.registry</a>
  &#8226;   <a href="#sre_compile">sre_compile</a>
  &#8226;   <a href="#sre_constants">sre_constants</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
@@ -1119,6 +1119,7 @@ imported by:
  &#8226;   <a href="#directory_configs.prefix_destination_config">directory_configs.prefix_destination_config</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#skip_configs.skip_files_config">skip_configs.skip_files_config</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
  &#8226;   <a href="#traceback">traceback</a>
 
   </div>
@@ -5180,7 +5181,6 @@ imports:
  &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib._bootstrap">importlib._bootstrap</a>
  &#8226;   <a href="#importlib._bootstrap_external">importlib._bootstrap_external</a>
- &#8226;   <a href="#importlib.machinery">importlib.machinery</a>
  &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#warnings">warnings</a>
 
@@ -5311,8 +5311,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#importlib">importlib</a>
- &#8226;   <a href="#importlib.abc">importlib.abc</a>
+    <a href="#importlib.abc">importlib.abc</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#py_compile">py_compile</a>
 
@@ -6243,7 +6242,8 @@ imported by:
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#skip_configs.skip_files_config">skip_configs.skip_files_config</a>
  &#8226;   <a href="#socket">socket</a>
- &#8226;   <a href="#source_config.source_config">source_config.source_config</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#tarfile">tarfile</a>
@@ -6907,36 +6907,84 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="source_config"></a>
-  <a target="code" href="///C:/Users/unloc/Github/EDM_Backup/source_config/__init__.py" type="text/plain"><tt>source_config</tt></a>
+  <a name="source_configs"></a>
+  <a target="code" href="///C:/Users/unloc/Github/EDM_Backup/source_configs/__init__.py" type="text/plain"><tt>source_configs</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
 imports:
-    <a href="#source_config.source_config">source_config.source_config</a>
+    <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#config_interface.py">config_interface.py</a>
- &#8226;   <a href="#source_config.source_config">source_config.source_config</a>
+    <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.registry">source_configs.registry</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
 
   </div>
 
 </div>
 
 <div class="node">
-  <a name="source_config.source_config"></a>
-  <a target="code" href="///C:/Users/unloc/Github/EDM_Backup/source_config/source_config.py" type="text/plain"><tt>source_config.source_config</tt></a>
+  <a name="source_configs.add_sources_config"></a>
+  <a target="code" href="///C:/Users/unloc/Github/EDM_Backup/source_configs/add_sources_config.py" type="text/plain"><tt>source_configs.add_sources_config</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#os">os</a>
- &#8226;   <a href="#source_config">source_config</a>
+    <a href="#ast">ast</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.registry">source_configs.registry</a>
  &#8226;   <a href="#templates">templates</a>
  &#8226;   <a href="#utils.dir_utils">utils.dir_utils</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#source_config">source_config</a>
+    <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.registry">source_configs.registry</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="source_configs.registry"></a>
+  <a target="code" href="///C:/Users/unloc/Github/EDM_Backup/source_configs/registry.py" type="text/plain"><tt>source_configs.registry</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#config_interface.py">config_interface.py</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="source_configs.source_config"></a>
+  <a target="code" href="///C:/Users/unloc/Github/EDM_Backup/source_configs/source_config.py" type="text/plain"><tt>source_configs.source_config</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#os">os</a>
+ &#8226;   <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.registry">source_configs.registry</a>
+ &#8226;   <a href="#templates">templates</a>
+ &#8226;   <a href="#utils.dir_utils">utils.dir_utils</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.registry">source_configs.registry</a>
 
   </div>
 
@@ -7319,7 +7367,8 @@ imported by:
  &#8226;   <a href="#directory_configs.prefix_destination_config">directory_configs.prefix_destination_config</a>
  &#8226;   <a href="#name_configs.replace_files_config">name_configs.replace_files_config</a>
  &#8226;   <a href="#skip_configs.skip_files_config">skip_configs.skip_files_config</a>
- &#8226;   <a href="#source_config.source_config">source_config.source_config</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
  &#8226;   <a href="#templates.config">templates.config</a>
 
   </div>
@@ -7856,7 +7905,8 @@ imported by:
     <a href="#directory_configs.default_destination_config">directory_configs.default_destination_config</a>
  &#8226;   <a href="#directory_configs.prefix_destination_config">directory_configs.prefix_destination_config</a>
  &#8226;   <a href="#skip_configs.skip_files_config">skip_configs.skip_files_config</a>
- &#8226;   <a href="#source_config.source_config">source_config.source_config</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
 
   </div>
 

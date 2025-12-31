@@ -20,5 +20,5 @@ class DestinationConfig(Config):
         else:
             raise SystemExit("Destination folder not set. Exiting.")
 
-    def resolve_helper(self, source_filename, prov_dst_dir, config_value):
+    def resolve_helper(self, source_filename, source_filepath, prov_dst_dir, config_value):
         return config_value

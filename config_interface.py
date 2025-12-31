@@ -6,7 +6,7 @@ from source_configs.registry import SOURCE_CONFIGS
 def main():
     # Collect all config objects
     configs = SOURCE_CONFIGS + DIRECTORY_CONFIGS + NAME_CONFIGS + SKIP_CONFIGS
-
+    print(configs)
     # Map number → config object for menu
     config_map = {str(i + 1): cfg for i, cfg in enumerate(configs)}
 

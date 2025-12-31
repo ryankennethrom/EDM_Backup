@@ -56,7 +56,7 @@ class SkipFilesConfig(Config):
         # Store as a simple string (easy to persist)
         return str(selected_files)
 
-    def resolve_helper(self, source_filename, prov_dst_dir, config_value):
+    def resolve_helper(self, source_filename, source_filepath, prov_dst_dir, config_value):
         """
         If the source filename is in the skip list, generate a unique path.
         Otherwise, overwrite.

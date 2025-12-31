@@ -21,7 +21,7 @@ class DefaultDestinationConfig(Config):
         
         return dst
 
-    def resolve_helper(self, source_filename, prov_dst_dir, config_value):
+    def resolve_helper(self, source_filename, source_filepath, prov_dst_dir, config_value):
         if prov_dst_dir != "":
             return prov_dst_dir
         return config_value
