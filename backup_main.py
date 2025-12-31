@@ -1,9 +1,18 @@
 from directory_configs.registry import DIRECTORY_CONFIGS
 from name_configs.registry import NAME_CONFIGS
+from skip_configs.registry import SKIP_CONFIGS
 from source_config import SOURCE_CONFIG
 import os
 import shutil
 import textoutputcontroller as toc
+
+def isFileSkip(source_filename, prov_dst_dir):
+    toc.info(f"Resolving file inclusion"
+    for config in SKIP_CONFIGS:
+        if config.resolve(source_filename, prov_dst_dir) == True:
+            toc.info(f"Skipping {source_filename} because of {config.__class__.__name__}")
+            return True
+    return False
 
 if __name__ == "__main__":
     try:
@@ -22,7 +31,7 @@ if __name__ == "__main__":
 
             toc.info(f"Resolving directory")
             
-            to_log = "No Path"
+            to_log = ""
             for dir_config in DIRECTORY_CONFIGS:
                 to_log += f" ==={dir_config.__class__.__name__}"
                 resolved_dst = dir_config.resolve(name, dst_path)
@@ -56,6 +65,9 @@ if __name__ == "__main__":
                 to_log += f"===> {dst_path}"
             
             toc.info(to_log)
+
+            if isFileSkip(name, dst_path):
+                continue
 
             toc.info(f"Backing up from {src_path} to {dst_path}") 
             shutil.move(src_path, dst_path)
