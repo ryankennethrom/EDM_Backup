@@ -2,6 +2,7 @@ from templates import Config
 from utils.dir_utils import pick_folder
 from .registry import register
 import os
+import ast
 
 @register
 class AdditionalSourcesConfig(Config):
@@ -41,5 +42,5 @@ class AdditionalSourcesConfig(Config):
         # Return as STRING so it can be stored in config
         return str(sources)
 
-    def resolve_helper(self, source_filename, prov_dst_dir, config_value):
+    def resolve_helper(self, source_filename, source_filepath, prov_dst_dir, config_value):
         return ast.literal_eval(config_value) if config_value is not None else []
