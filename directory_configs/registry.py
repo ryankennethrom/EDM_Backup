@@ -13,6 +13,7 @@ def load_registry():
     from . import prefix_destination_config 
     from . import default_destination_config
     from . import org_by_curr_year_config
+    from . import created_year_org_config
 
     
     instantiated = []

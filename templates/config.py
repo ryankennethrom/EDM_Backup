@@ -17,12 +17,12 @@ class Config(Singleton):
         config[self.config_key] = self.config_value
         overwrite_config(config)
 
-    def resolve(self, source_file_name, prov_dst_dir):
+    def resolve(self, source_file_name, source_file_path, prov_dst_dir):
         self.load_config()
         if self.config_value is None:
             self.config_value = self.prompt(self.config_value)
             self.save_config()
-        return self.resolve_helper(source_file_name, prov_dst_dir, self.config_value)
+        return self.resolve_helper(source_file_name, source_file_path, prov_dst_dir, self.config_value)
 
     def get_config_value(self):
         self.load_config()
@@ -38,5 +38,5 @@ class Config(Singleton):
         raise Exception("This function must be overriden")
 
     # Returns the same provisional destination directory with or without additional subfolders/subfiles
-    def resolve_helper(self, source_file_name, prov_dst_dir, config_value):   
+    def resolve_helper(self, source_file_name, source_file_path, prov_dst_dir, config_value):   
         raise Exception("This function must be overriden")

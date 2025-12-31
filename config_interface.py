@@ -1,11 +1,11 @@
 from directory_configs.registry import DIRECTORY_CONFIGS
 from name_configs.registry import NAME_CONFIGS
 from skip_configs.registry import SKIP_CONFIGS
-from source_config import SOURCE_CONFIG
+from source_configs.registry import SOURCE_CONFIGS
 
 def main():
     # Collect all config objects
-    configs = [SOURCE_CONFIG] + DIRECTORY_CONFIGS + NAME_CONFIGS + SKIP_CONFIGS
+    configs = SOURCE_CONFIGS + DIRECTORY_CONFIGS + NAME_CONFIGS + SKIP_CONFIGS
 
     # Map number → config object for menu
     config_map = {str(i + 1): cfg for i, cfg in enumerate(configs)}
