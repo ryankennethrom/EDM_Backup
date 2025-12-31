@@ -43,3 +43,24 @@
 2025-12-24 05:21:08 - INFO - C:/Users/ryanr/Documents/DummyDST ===ReplaceFilesConfig===> C:/Users/ryanr/Documents/DummyDST\Havana(2).txt
 2025-12-24 05:21:08 - INFO - Backing up from C:\Users\ryanr\Documents\DummySRC\Havana.txt to C:/Users/ryanr/Documents/DummyDST\Havana(2).txt
 2025-12-24 05:21:08 - INFO - Backed up a total of 1 files
+2025-12-31 01:37:03 - INFO - ========== PROGRAM START ==========
+2025-12-31 01:37:37 - INFO - Backing up files from C:/Users/unloc/Documents/SRC_Test
+2025-12-31 01:37:37 - INFO - Backed up a total of 0 files
+2025-12-31 01:38:52 - INFO - ========== PROGRAM START ==========
+2025-12-31 01:38:52 - INFO - Backing up files from C:/Users/unloc/Documents/SRC_Test
+2025-12-31 01:38:52 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Hey.txt
+2025-12-31 01:38:52 - INFO - Resolving directory
+2025-12-31 01:38:52 - INFO - No Path ===DestinationConfig===> C:/Users/ryanr/Documents/DummyDST
+2025-12-31 01:38:52 - INFO - Resolving filename
+2025-12-31 01:38:52 - INFO - C:/Users/ryanr/Documents/DummyDST ===ReplaceFilesConfig===> C:/Users/ryanr/Documents/DummyDST\Hey.txt
+2025-12-31 01:38:52 - INFO - Backing up from C:\Users\unloc\Documents\SRC_Test\Hey.txt to C:/Users/ryanr/Documents/DummyDST\Hey.txt
+2025-12-31 01:38:52 - ERROR - Error occured : [WinError 3] The system cannot find the path specified
+2025-12-31 01:38:59 - INFO - ========== PROGRAM START ==========
+2025-12-31 01:38:59 - INFO - Backing up files from C:/Users/unloc/Documents/SRC_Test
+2025-12-31 01:38:59 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Hey.txt
+2025-12-31 01:38:59 - INFO - Resolving directory
+2025-12-31 01:38:59 - INFO - No Path ===DestinationConfig===> C:/Users/ryanr/Documents/DummyDST
+2025-12-31 01:38:59 - INFO - Resolving filename
+2025-12-31 01:38:59 - INFO - C:/Users/ryanr/Documents/DummyDST ===ReplaceFilesConfig===> C:/Users/ryanr/Documents/DummyDST\Hey.txt
+2025-12-31 01:38:59 - INFO - Backing up from C:\Users\unloc\Documents\SRC_Test\Hey.txt to C:/Users/ryanr/Documents/DummyDST\Hey.txt
+2025-12-31 01:38:59 - ERROR - Error occured : [WinError 3] The system cannot find the path specified

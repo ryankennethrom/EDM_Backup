@@ -1,5 +1,5 @@
-from .backup_path_config import BackupPathConfig
+from .config import Config
 
 __all__ = [
-        "BackupPathConfig"
+        "Config"
 ]
