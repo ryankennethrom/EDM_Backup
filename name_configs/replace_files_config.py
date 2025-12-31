@@ -1,9 +1,9 @@
-from templates import BackupPathConfig
+from templates import Config
 from .registry import register
 import os
 
 @register
-class ReplaceFilesConfig(BackupPathConfig):
+class ReplaceFilesConfig(Config):
     def get_unique_path(self, dst_dir, filename):
         base, ext = os.path.splitext(filename)
         counter = 1

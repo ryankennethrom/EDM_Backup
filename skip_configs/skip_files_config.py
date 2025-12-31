@@ -6,16 +6,6 @@ import os
 
 @register
 class SkipFilesConfig(Config):
-    def get_unique_path(self, dst_dir, filename):
-        base, ext = os.path.splitext(filename)
-        counter = 1
-        candidate = filename
-
-        while os.path.exists(os.path.join(dst_dir, candidate)):
-            candidate = f"{base}({counter}){ext}"
-            counter += 1
-
-        return os.path.join(dst_dir, candidate)
 
     def prompt_config(self):
         """
@@ -24,7 +14,7 @@ class SkipFilesConfig(Config):
         selected_files = []
 
         while True:
-            print("\nCurrent files:")
+            print("\nFiles to be skipped :")
             if selected_files:
                 for i, f in enumerate(selected_files, 1):
                     print(f"  {i}. {f}")
@@ -32,8 +22,8 @@ class SkipFilesConfig(Config):
                 print("  (none)")
 
             print("\nChoose an action:")
-            print("  [A] Add a file")
-            print("  [D] Delete a file")
+            print("  [A] Add a file to skip")
+            print("  [D] Remove file ")
             print("  [S] Stop")
 
             choice = input("> ").strip().lower()
@@ -62,7 +52,7 @@ class SkipFilesConfig(Config):
                 print("Invalid choice.")
 
         # Store as a simple string (easy to persist)
-        return selected_files
+        return ",".join(selected_files)
 
     def resolve_helper(self, source_filename, prov_dst_dir, config_value):
         """
@@ -74,10 +64,6 @@ class SkipFilesConfig(Config):
         )
 
         if source_filename in skip_files:
-            return self.get_unique_path(prov_dst_dir, source_filename)
+            return False
 
-        dst_path = os.path.join(prov_dst_dir, source_filename)
-        if os.path.isfile(dst_path):
-            os.remove(dst_path)
-
-        return dst_path
+        return True

@@ -1,8 +1,8 @@
 from templates import Config
-from .registry import register
+from utils.dir_utils import pick_folder
 import os
 
-class SourceConfig(BackupPathConfig):
+class SourceConfig(Config):
     def prompt_config(self):
         answer = input(
                 "Script doesn't know which folder to back up.\n"

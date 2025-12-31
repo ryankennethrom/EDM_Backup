@@ -1,5 +1,20 @@
 import tkinter as tk
 from tkinter import filedialog
+import os
+
+def pick_filename(title):
+    root = tk.Tk()
+    root.withdraw()
+    root.attributes("-topmost", True)
+
+    path = filedialog.askopenfilename(title=title)
+
+    root.destroy()
+
+    if not path:
+        return ""
+
+    return os.path.basename(path)
 
 def pick_folder(title):
     root = tk.Tk()

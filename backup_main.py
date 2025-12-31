@@ -1,22 +1,30 @@
-from directory_configs.registry import DIRECTORY_CONFIGS
-from name_configs.registry import NAME_CONFIGS
-from skip_configs.registry import SKIP_CONFIGS
-from source_config import SOURCE_CONFIG
-import os
-import shutil
 import textoutputcontroller as toc
-
-def isFileSkip(source_filename, prov_dst_dir):
-    toc.info(f"Resolving file inclusion"
-    for config in SKIP_CONFIGS:
-        if config.resolve(source_filename, prov_dst_dir) == True:
-            toc.info(f"Skipping {source_filename} because of {config.__class__.__name__}")
-            return True
-    return False
 
 if __name__ == "__main__":
     try:
-        src = SOURCE_CONFIG().get_save_return()
+        from directory_configs.registry import DIRECTORY_CONFIGS
+        from name_configs.registry import NAME_CONFIGS
+        from skip_configs.registry import SKIP_CONFIGS
+        from source_config import SOURCE_CONFIG
+        import os
+        import shutil
+
+        def isFileSkip(source_filename, prov_dst_dir):
+            toc.info(f"Resolving file inclusion")
+            for config in SKIP_CONFIGS:
+                if config.resolve(source_filename, prov_dst_dir) == True:
+                    toc.info(f"Skipping {source_filename} because of {config.__class__.__name__}")
+                    return True
+            return False
+
+    except Exception as e:
+        toc.info(f"Error occured: {e}")
+        exit
+
+
+    try:
+        src = SOURCE_CONFIG.resolve(None, None)
+
         src_filenames = os.listdir(src) 
         
         toc.info(f"Backing up files from {src}")
