@@ -123,3 +123,241 @@
 2025-12-31 03:03:03 - INFO - Resolving file inclusion
 2025-12-31 03:03:03 - INFO - Skipping Skip.txt because of SkipFilesConfig
 2025-12-31 03:03:03 - INFO - Backed up a total of 0 files
+2025-12-31 03:05:50 - INFO - ========== PROGRAM START ==========
+2025-12-31 03:05:50 - INFO - Backing up files from C:/Users/unloc/Documents/SRC_Test
+2025-12-31 03:05:50 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Skip.txt
+2025-12-31 03:05:50 - INFO - Resolving directory
+2025-12-31 03:05:50 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test\2025
+2025-12-31 03:05:50 - INFO - Resolving filename
+2025-12-31 03:05:50 - INFO - C:/Users/unloc/Documents/DST_Test\2025 ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\2025\Skip.txt
+2025-12-31 03:05:50 - INFO - Resolving file inclusion
+2025-12-31 03:05:50 - INFO - Skipping Skip.txt because of SkipFilesConfig
+2025-12-31 03:05:50 - INFO - Backed up a total of 0 files
+2025-12-31 03:34:13 - INFO - ========== PROGRAM START ==========
+2025-12-31 03:34:13 - INFO - ========== PROGRAM START ==========
+2025-12-31 03:34:13 - INFO - Backing up files from C:/Users/unloc/Documents/SRC_Test
+2025-12-31 03:34:13 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Skip.txt
+2025-12-31 03:34:13 - INFO - Resolving directory
+2025-12-31 03:34:13 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test\2025
+2025-12-31 03:34:13 - INFO - Resolving filename
+2025-12-31 03:34:13 - INFO - C:/Users/unloc/Documents/DST_Test\2025 ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\2025\Skip.txt
+2025-12-31 03:34:13 - INFO - Resolving file inclusion
+2025-12-31 03:34:13 - INFO - Skipping Skip.txt because of SkipFilesConfig
+2025-12-31 03:34:13 - INFO - Backed up a total of 0 files
+2025-12-31 03:34:13 - INFO - Backing up files from C:/Users/unloc/Documents/SRC_Test
+2025-12-31 03:34:13 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Skip.txt
+2025-12-31 03:34:13 - INFO - Resolving directory
+2025-12-31 03:34:13 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test\2025
+2025-12-31 03:34:13 - INFO - Resolving filename
+2025-12-31 03:34:13 - INFO - C:/Users/unloc/Documents/DST_Test\2025 ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\2025\Skip.txt
+2025-12-31 03:34:13 - INFO - Resolving file inclusion
+2025-12-31 03:34:13 - INFO - Skipping Skip.txt because of SkipFilesConfig
+2025-12-31 03:34:13 - INFO - Backed up a total of 0 files
+2025-12-31 03:34:59 - INFO - ========== PROGRAM START ==========
+2025-12-31 03:40:14 - INFO - ========== PROGRAM START ==========
+2025-12-31 03:41:53 - INFO - ========== PROGRAM START ==========
+2025-12-31 03:42:01 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:07:37 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:08:44 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:08:44 - ERROR - Error occured : name 'config' is not defined
+2025-12-31 04:14:59 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:14:59 - ERROR - Error occured : name 'config' is not defined
+2025-12-31 04:18:40 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:18:40 - ERROR - Error occured : name 'config' is not defined
+2025-12-31 04:19:53 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:19:53 - INFO - Imported directory configs
+2025-12-31 04:19:53 - ERROR - Error occured : name 'config' is not defined
+2025-12-31 04:21:26 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:21:26 - INFO - Imported directory configs
+2025-12-31 04:21:26 - INFO - Imported name configs
+2025-12-31 04:21:26 - INFO - Imported skip configs
+2025-12-31 04:21:26 - INFO - Import source configs
+2025-12-31 04:21:26 - ERROR - Error occured : name 'config' is not defined
+2025-12-31 04:23:02 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:23:03 - INFO - Imported directory configs
+2025-12-31 04:23:03 - INFO - Imported name configs
+2025-12-31 04:23:03 - INFO - Imported skip configs
+2025-12-31 04:23:03 - INFO - Import source configs
+2025-12-31 04:23:03 - ERROR - Error occured : name 'config' is not defined
+2025-12-31 04:25:08 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:25:08 - INFO - Imported directory configs
+2025-12-31 04:25:08 - INFO - Imported name configs
+2025-12-31 04:25:08 - INFO - Imported skip configs
+2025-12-31 04:25:08 - INFO - Import source configs
+2025-12-31 04:25:08 - INFO - Resolved source to C:/Users/unloc/Documents/YOSHA
+2025-12-31 04:25:08 - INFO - Backing up files from C:/Users/unloc/Documents/YOSHA
+2025-12-31 04:25:08 - INFO - Backing up C:\Users\unloc\Documents\YOSHA\2025
+2025-12-31 04:25:08 - INFO - Resolving directory
+2025-12-31 04:25:08 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test\2025
+2025-12-31 04:25:08 - INFO - Resolving filename
+2025-12-31 04:25:08 - INFO - C:/Users/unloc/Documents/DST_Test\2025 ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\2025\2025
+2025-12-31 04:25:08 - INFO - Resolving file inclusion
+2025-12-31 04:25:08 - INFO - Skipping 2025 because of SkipFilesConfig
+2025-12-31 04:25:08 - INFO - Backed up a total of 0 files
+2025-12-31 04:26:52 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:28:01 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:28:01 - INFO - Imported directory configs
+2025-12-31 04:28:01 - INFO - Imported name configs
+2025-12-31 04:28:01 - INFO - Imported skip configs
+2025-12-31 04:28:01 - INFO - Import source configs
+2025-12-31 04:28:01 - INFO - Resolved source to C:/Users/unloc/Documents/YOSHA
+2025-12-31 04:28:01 - INFO - Backing up files from C:/Users/unloc/Documents/YOSHA
+2025-12-31 04:28:01 - INFO - Backing up C:\Users\unloc\Documents\YOSHA\2025
+2025-12-31 04:28:01 - INFO - Resolving directory
+2025-12-31 04:28:01 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test\2025
+2025-12-31 04:28:01 - INFO - Resolving filename
+2025-12-31 04:28:01 - INFO - C:/Users/unloc/Documents/DST_Test\2025 ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\2025\2025
+2025-12-31 04:28:01 - INFO - Resolving file inclusion
+2025-12-31 04:28:01 - INFO - Skipping 2025 because of SkipFilesConfig
+2025-12-31 04:28:01 - INFO - Backed up a total of 0 files
+2025-12-31 04:32:36 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:36:05 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:36:05 - INFO - Imported directory configs
+2025-12-31 04:36:05 - INFO - Imported name configs
+2025-12-31 04:36:05 - INFO - Imported skip configs
+2025-12-31 04:36:05 - INFO - Import source configs
+2025-12-31 04:36:05 - INFO - Resolved source to C:/Users/unloc/Documents/SRC_Test
+2025-12-31 04:36:05 - INFO - Backing up files from C:/Users/unloc/Documents/SRC_Test
+2025-12-31 04:36:05 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\L-Blade.txt
+2025-12-31 04:36:05 - INFO - Resolving directory
+2025-12-31 04:36:05 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test\2025
+2025-12-31 04:36:05 - INFO - Resolving filename
+2025-12-31 04:36:05 - INFO - C:/Users/unloc/Documents/DST_Test\2025 ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\2025\L-Blade.txt
+2025-12-31 04:36:05 - INFO - Resolving file inclusion
+2025-12-31 04:36:05 - INFO - Backing up from C:\Users\unloc\Documents\SRC_Test\L-Blade.txt to C:/Users/unloc/Documents/DST_Test\2025\L-Blade.txt
+2025-12-31 04:36:05 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Skip.txt
+2025-12-31 04:36:05 - INFO - Resolving directory
+2025-12-31 04:36:05 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test\2025
+2025-12-31 04:36:05 - INFO - Resolving filename
+2025-12-31 04:36:05 - INFO - C:/Users/unloc/Documents/DST_Test\2025 ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\2025\Skip.txt
+2025-12-31 04:36:05 - INFO - Resolving file inclusion
+2025-12-31 04:36:05 - INFO - Skipping Skip.txt because of SkipFilesConfig
+2025-12-31 04:36:05 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Yosha.txt
+2025-12-31 04:36:05 - INFO - Resolving directory
+2025-12-31 04:36:05 - INFO - Prefix 'Yo' matched with Yosha.txt
+2025-12-31 04:36:05 - INFO -  ===PrefixDestinationConfig===> C:/Users/unloc/Documents/YOSHA ===DefaultDestinationConfig===> C:/Users/unloc/Documents/YOSHA ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/YOSHA\2025
+2025-12-31 04:36:05 - INFO - Resolving filename
+2025-12-31 04:36:05 - INFO - C:/Users/unloc/Documents/YOSHA\2025 ===ReplaceFilesConfig===> C:/Users/unloc/Documents/YOSHA\2025\Yosha.txt
+2025-12-31 04:36:05 - INFO - Resolving file inclusion
+2025-12-31 04:36:05 - INFO - Backing up from C:\Users\unloc\Documents\SRC_Test\Yosha.txt to C:/Users/unloc/Documents/YOSHA\2025\Yosha.txt
+2025-12-31 04:36:05 - INFO - Backed up a total of 2 files
+2025-12-31 04:37:04 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:38:03 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:38:03 - INFO - Imported directory configs
+2025-12-31 04:38:03 - INFO - Imported name configs
+2025-12-31 04:38:03 - INFO - Imported skip configs
+2025-12-31 04:38:03 - INFO - Import source configs
+2025-12-31 04:38:03 - INFO - Resolved source to C:/Users/unloc/Documents/SRC_Test
+2025-12-31 04:38:03 - INFO - Backing up files from C:/Users/unloc/Documents/SRC_Test
+2025-12-31 04:38:03 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Curse.txt
+2025-12-31 04:38:03 - INFO - Resolving directory
+2025-12-31 04:38:03 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test\2025
+2025-12-31 04:38:03 - INFO - Resolving filename
+2025-12-31 04:38:03 - INFO - C:/Users/unloc/Documents/DST_Test\2025 ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\2025\Curse.txt
+2025-12-31 04:38:03 - INFO - Resolving file inclusion
+2025-12-31 04:38:03 - INFO - Backing up from C:\Users\unloc\Documents\SRC_Test\Curse.txt to C:/Users/unloc/Documents/DST_Test\2025\Curse.txt
+2025-12-31 04:38:03 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\New folder
+2025-12-31 04:38:03 - INFO - Resolving directory
+2025-12-31 04:38:03 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test\2025
+2025-12-31 04:38:03 - INFO - Resolving filename
+2025-12-31 04:38:03 - INFO - C:/Users/unloc/Documents/DST_Test\2025 ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\2025\New folder
+2025-12-31 04:38:03 - INFO - Resolving file inclusion
+2025-12-31 04:38:03 - INFO - Backing up from C:\Users\unloc\Documents\SRC_Test\New folder to C:/Users/unloc/Documents/DST_Test\2025\New folder
+2025-12-31 04:38:03 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Skip.txt
+2025-12-31 04:38:03 - INFO - Resolving directory
+2025-12-31 04:38:03 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test\2025
+2025-12-31 04:38:03 - INFO - Resolving filename
+2025-12-31 04:38:03 - INFO - C:/Users/unloc/Documents/DST_Test\2025 ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\2025\Skip.txt
+2025-12-31 04:38:03 - INFO - Resolving file inclusion
+2025-12-31 04:38:03 - INFO - Skipping Skip.txt because of SkipFilesConfig
+2025-12-31 04:38:03 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Yosha.txt
+2025-12-31 04:38:03 - INFO - Resolving directory
+2025-12-31 04:38:03 - INFO - Prefix 'Yo' matched with Yosha.txt
+2025-12-31 04:38:03 - INFO -  ===PrefixDestinationConfig===> C:/Users/unloc/Documents/YOSHA ===DefaultDestinationConfig===> C:/Users/unloc/Documents/YOSHA ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/YOSHA\2025
+2025-12-31 04:38:03 - INFO - Resolving filename
+2025-12-31 04:38:03 - INFO - C:/Users/unloc/Documents/YOSHA\2025 ===ReplaceFilesConfig===> C:/Users/unloc/Documents/YOSHA\2025\Yosha.txt
+2025-12-31 04:38:03 - INFO - Resolving file inclusion
+2025-12-31 04:38:03 - INFO - Backing up from C:\Users\unloc\Documents\SRC_Test\Yosha.txt to C:/Users/unloc/Documents/YOSHA\2025\Yosha.txt
+2025-12-31 04:38:03 - INFO - Backed up a total of 3 files
+2025-12-31 04:38:32 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:40:06 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:40:06 - INFO - Imported directory configs
+2025-12-31 04:40:06 - INFO - Imported name configs
+2025-12-31 04:40:06 - INFO - Imported skip configs
+2025-12-31 04:40:06 - INFO - Import source configs
+2025-12-31 04:40:06 - INFO - Resolved source to C:/Users/unloc/Documents/SRC_Test
+2025-12-31 04:40:06 - INFO - Backing up files from C:/Users/unloc/Documents/SRC_Test
+2025-12-31 04:40:06 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Hey
+2025-12-31 04:40:06 - INFO - Resolving directory
+2025-12-31 04:40:06 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test
+2025-12-31 04:40:06 - INFO - Resolving filename
+2025-12-31 04:40:06 - INFO - C:/Users/unloc/Documents/DST_Test ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\Hey
+2025-12-31 04:40:06 - INFO - Resolving file inclusion
+2025-12-31 04:40:06 - INFO - Backing up from C:\Users\unloc\Documents\SRC_Test\Hey to C:/Users/unloc/Documents/DST_Test\Hey
+2025-12-31 04:40:06 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Kill.txt
+2025-12-31 04:40:06 - INFO - Resolving directory
+2025-12-31 04:40:06 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test
+2025-12-31 04:40:06 - INFO - Resolving filename
+2025-12-31 04:40:06 - INFO - C:/Users/unloc/Documents/DST_Test ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\Kill.txt
+2025-12-31 04:40:06 - INFO - Resolving file inclusion
+2025-12-31 04:40:06 - INFO - Backing up from C:\Users\unloc\Documents\SRC_Test\Kill.txt to C:/Users/unloc/Documents/DST_Test\Kill.txt
+2025-12-31 04:40:06 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Skip.txt
+2025-12-31 04:40:06 - INFO - Resolving directory
+2025-12-31 04:40:06 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test
+2025-12-31 04:40:06 - INFO - Resolving filename
+2025-12-31 04:40:06 - INFO - C:/Users/unloc/Documents/DST_Test ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\Skip.txt
+2025-12-31 04:40:06 - INFO - Resolving file inclusion
+2025-12-31 04:40:06 - INFO - Skipping Skip.txt because of SkipFilesConfig
+2025-12-31 04:40:06 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Yosha.txt
+2025-12-31 04:40:06 - INFO - Resolving directory
+2025-12-31 04:40:06 - INFO - Prefix 'Yo' matched with Yosha.txt
+2025-12-31 04:40:06 - INFO -  ===PrefixDestinationConfig===> C:/Users/unloc/Documents/YOSHA ===DefaultDestinationConfig===> C:/Users/unloc/Documents/YOSHA ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/YOSHA
+2025-12-31 04:40:06 - INFO - Resolving filename
+2025-12-31 04:40:06 - INFO - C:/Users/unloc/Documents/YOSHA ===ReplaceFilesConfig===> C:/Users/unloc/Documents/YOSHA\Yosha.txt
+2025-12-31 04:40:06 - INFO - Resolving file inclusion
+2025-12-31 04:40:06 - INFO - Backing up from C:\Users\unloc\Documents\SRC_Test\Yosha.txt to C:/Users/unloc/Documents/YOSHA\Yosha.txt
+2025-12-31 04:40:06 - INFO - Backed up a total of 3 files
+2025-12-31 04:41:07 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:41:07 - INFO - Imported directory configs
+2025-12-31 04:41:07 - INFO - Imported name configs
+2025-12-31 04:41:07 - INFO - Imported skip configs
+2025-12-31 04:41:07 - INFO - Import source configs
+2025-12-31 04:41:07 - INFO - Resolved source to C:/Users/unloc/Documents/SRC_Test
+2025-12-31 04:41:07 - INFO - Backing up files from C:/Users/unloc/Documents/SRC_Test
+2025-12-31 04:41:07 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Kill.txt
+2025-12-31 04:41:07 - INFO - Resolving directory
+2025-12-31 04:41:07 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test
+2025-12-31 04:41:07 - INFO - Resolving filename
+2025-12-31 04:41:07 - INFO - C:/Users/unloc/Documents/DST_Test ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\Kill(1).txt
+2025-12-31 04:41:07 - INFO - Resolving file inclusion
+2025-12-31 04:41:07 - INFO - Backing up from C:\Users\unloc\Documents\SRC_Test\Kill.txt to C:/Users/unloc/Documents/DST_Test\Kill(1).txt
+2025-12-31 04:41:07 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Skip.txt
+2025-12-31 04:41:07 - INFO - Resolving directory
+2025-12-31 04:41:07 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test
+2025-12-31 04:41:07 - INFO - Resolving filename
+2025-12-31 04:41:07 - INFO - C:/Users/unloc/Documents/DST_Test ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\Skip.txt
+2025-12-31 04:41:07 - INFO - Resolving file inclusion
+2025-12-31 04:41:07 - INFO - Skipping Skip.txt because of SkipFilesConfig
+2025-12-31 04:41:07 - INFO - Backed up a total of 1 files
+2025-12-31 04:43:12 - INFO - ========== PROGRAM START ==========
+2025-12-31 04:43:12 - INFO - Imported directory configs
+2025-12-31 04:43:12 - INFO - Imported name configs
+2025-12-31 04:43:12 - INFO - Imported skip configs
+2025-12-31 04:43:12 - INFO - Import source configs
+2025-12-31 04:43:12 - INFO - Resolved source to C:/Users/unloc/Documents/SRC_Test
+2025-12-31 04:43:12 - INFO - Backing up files from C:/Users/unloc/Documents/SRC_Test
+2025-12-31 04:43:12 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Hey
+2025-12-31 04:43:12 - INFO - Resolving directory
+2025-12-31 04:43:12 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test
+2025-12-31 04:43:12 - INFO - Resolving filename
+2025-12-31 04:43:12 - INFO - C:/Users/unloc/Documents/DST_Test ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\Hey(1)
+2025-12-31 04:43:12 - INFO - Resolving file inclusion
+2025-12-31 04:43:12 - INFO - Backing up from C:\Users\unloc\Documents\SRC_Test\Hey to C:/Users/unloc/Documents/DST_Test\Hey(1)
+2025-12-31 04:43:12 - INFO - Backing up C:\Users\unloc\Documents\SRC_Test\Skip.txt
+2025-12-31 04:43:12 - INFO - Resolving directory
+2025-12-31 04:43:12 - INFO -  ===PrefixDestinationConfig===>  ===DefaultDestinationConfig===> C:/Users/unloc/Documents/DST_Test ===OrganizeByCurrentYearConfig===> C:/Users/unloc/Documents/DST_Test
+2025-12-31 04:43:12 - INFO - Resolving filename
+2025-12-31 04:43:12 - INFO - C:/Users/unloc/Documents/DST_Test ===ReplaceFilesConfig===> C:/Users/unloc/Documents/DST_Test\Skip.txt
+2025-12-31 04:43:12 - INFO - Resolving file inclusion
+2025-12-31 04:43:12 - INFO - Skipping Skip.txt because of SkipFilesConfig
+2025-12-31 04:43:12 - INFO - Backed up a total of 1 files

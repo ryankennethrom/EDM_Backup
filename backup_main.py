@@ -2,10 +2,18 @@ import textoutputcontroller as toc
 
 if __name__ == "__main__":
     try:
-        from directory_configs.registry import DIRECTORY_CONFIGS
+        from directory_configs.registry import DIRECTORY_CONFIGS        
+        toc.info(f"Imported directory configs")
+
         from name_configs.registry import NAME_CONFIGS
+        toc.info(f"Imported name configs")
+
         from skip_configs.registry import SKIP_CONFIGS
+        toc.info(f"Imported skip configs")
+
         from source_config import SOURCE_CONFIG
+        toc.info(f"Import source configs")
+
         import os
         import shutil
 
@@ -24,6 +32,7 @@ if __name__ == "__main__":
 
     try:
         src = SOURCE_CONFIG.resolve(None, None)
+        toc.info(f"Resolved source to {src}")
 
         src_filenames = os.listdir(src) 
         

@@ -1,20 +1,22 @@
 from templates import Config
 from .registry import register
 from utils.dir_utils import pick_filename
+from utils.config_utils import get_config
+import ast
 import os
 
 
 @register
 class SkipFilesConfig(Config):
 
-    def prompt_config(self):
+    def prompt(self, prev_config_value):
         """
         Interactive interface for managing a list of filenames.
         """
-        selected_files = []
+        selected_files = ast.literal_eval(prev_config_value) if prev_config_value is not None else []
 
         while True:
-            print("\nFiles to be skipped :")
+            print("\nCurrent files to be skipped :")
             if selected_files:
                 for i, f in enumerate(selected_files, 1):
                     print(f"  {i}. {f}")
@@ -23,7 +25,7 @@ class SkipFilesConfig(Config):
 
             print("\nChoose an action:")
             print("  [A] Add a file to skip")
-            print("  [D] Remove file ")
+            print("  [D] Remove a file")
             print("  [S] Stop")
 
             choice = input("> ").strip().lower()
@@ -40,7 +42,7 @@ class SkipFilesConfig(Config):
                     print("No files to delete.")
                     continue
 
-                filename = pick_filename("Select a file to delete")
+                filename = pick_filename("Select a file to remove")
                 if filename in selected_files:
                     selected_files.remove(filename)
 
@@ -52,18 +54,16 @@ class SkipFilesConfig(Config):
                 print("Invalid choice.")
 
         # Store as a simple string (easy to persist)
-        return ",".join(selected_files)
+        return str(selected_files)
 
     def resolve_helper(self, source_filename, prov_dst_dir, config_value):
         """
         If the source filename is in the skip list, generate a unique path.
         Otherwise, overwrite.
         """
-        skip_files = set(
-            f for f in config_value.split(",") if f
-        )
+        skip_files = ast.literal_eval(config_value)
 
         if source_filename in skip_files:
-            return False
+            return True
 
-        return True
+        return False

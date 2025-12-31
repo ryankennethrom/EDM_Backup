@@ -15,7 +15,7 @@ class ReplaceFilesConfig(Config):
 
         return os.path.join(dst_dir, candidate)
 
-    def prompt_config(self):
+    def prompt(self, prev_config_value):
         answer = input(
             "Replace files in destination or keep copies?\n"
             "[Enter R to replace / C to keep copies] "

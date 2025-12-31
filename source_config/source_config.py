@@ -3,7 +3,7 @@ from utils.dir_utils import pick_folder
 import os
 
 class SourceConfig(Config):
-    def prompt_config(self):
+    def prompt(self, prev_config_value):
         answer = input(
                 "Script doesn't know which folder to back up.\n"
                 "Assign which folder to back up? [Enter Y/n]: "

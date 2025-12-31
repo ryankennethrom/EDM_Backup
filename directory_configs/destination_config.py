@@ -4,7 +4,7 @@ from utils.dir_utils import pick_folder
 
 @register
 class DestinationConfig(Config):
-    def prompt_config(self):
+    def prompt(self, prev_config_value):
         answer = input(
             "Script doesn't know where to back up files.\n"
             "Assign destination folder? [Enter Y/n]: "

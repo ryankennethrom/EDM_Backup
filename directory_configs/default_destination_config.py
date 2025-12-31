@@ -4,7 +4,7 @@ from utils.dir_utils import pick_folder
 
 @register
 class DefaultDestinationConfig(Config):
-    def prompt_config(self):
+    def prompt(self, prev_config_value):
         answer = input(
             "Assign a default destination folder ? [Enter Y/n] "
         ).strip().lower()

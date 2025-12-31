@@ -7,7 +7,7 @@ from datetime import datetime
 
 @register
 class OrganizeByCurrentYearConfig(Config):
-    def prompt_config(self):
+    def prompt(self, prev_config_value):
         answer = input("Organize files by current year? [Enter Y/n]: ").strip().lower()
         return answer in ("", "y", "yes")
 
