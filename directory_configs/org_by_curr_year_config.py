@@ -3,7 +3,7 @@ from .registry import register
 import ast
 import os
 from datetime import datetime
-
+import textoutputcontroller as toc
 
 @register
 class OrganizeByCurrentYearConfig(Config):
@@ -11,19 +11,21 @@ class OrganizeByCurrentYearConfig(Config):
         answer = input("Organize files by current year? [Enter Y/n]: ").strip().lower()
         return answer in ("", "y", "yes")
 
-    def resolve_helper(self, source_filename, source_filepath, prov_dst_dir, config_value):
+    def resolve_helper(self, resolve_params):
+        if not os.path.isdir(resolve_params.dst_dirpath):
+            toc.info(f"Warning: {self.__class__.__name__} encounted the invalid directory: {resolve_params.dst_dirpath}")
+            return resolve_params.dst_dirpath
+
         enabled = (
-            config_value
-            if isinstance(config_value, bool)
-            else ast.literal_eval(config_value)
+            resolve_params.config_value
+            if isinstance(resolve_params.config_value, bool)
+            else ast.literal_eval(resolve_params.config_value)
         )
 
         if not enabled:
-            return prov_dst_dir
+            return resolve_params.dst_dirpath
 
-        year_dir = os.path.join(prov_dst_dir, str(datetime.now().year))
+        year_dir = os.path.join(resolve_params.dst_dirpath, str(datetime.now().year))
 
-        # ✅ CRITICAL FIX
         os.makedirs(year_dir, exist_ok=True)
-
         return year_dir

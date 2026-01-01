@@ -1,9 +1,0 @@
-DestinationConfig=C:/Users/ryanr/Documents/DummyDST
-ReplaceFilesConfig=False
-SourceConfig=C:/Users/unloc/Documents/SRC_Test_2
-PrefixDestinationConfig={'Yo': 'C:/Users/unloc/Documents/YOSHA'}
-DefaultDestinationConfig=C:/Users/unloc/Documents/DST_Test
-OrganizeByCurrentYearConfig=False
-SkipFilesConfig=['Skip.txt']
-AdditionalSourcesConfig=['C:/Users/unloc/Documents/SRC_Test', 'C:/Users/unloc/Documents/SRC_Test_3']
-OrganizeByCreatedYearConfig=True

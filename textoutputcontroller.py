@@ -2,14 +2,17 @@ import logging
 import os
 import sys
 from logging.handlers import TimedRotatingFileHandler
+from colorama import Fore, Style, init
 
 # ================= CONFIG =================
 WRITE_LOGS = True
 WRITE_TO_TERMINAL = True
-LOG_FILENAME = "backup.log"
 DAYS_TO_KEEP = 7
+LOG_FILENAME = "backup.log"
 # =========================================
 
+# Initialize colorama for Windows
+init(autoreset=True)
 
 def setup_logging():
     # Detect running as EXE or script
@@ -18,7 +21,7 @@ def setup_logging():
     else:
         base_dir = os.path.dirname(os.path.abspath(__file__))
 
-    log_dir = os.path.join(base_dir, "logs")
+    log_dir = os.path.join(base_dir, "backup_logs")
     os.makedirs(log_dir, exist_ok=True)
 
     log_path = os.path.join(log_dir, LOG_FILENAME)
@@ -28,9 +31,9 @@ def setup_logging():
     if WRITE_LOGS:
         file_handler = TimedRotatingFileHandler(
             log_path,
-            when="midnight",      # rotate daily
+            when="midnight",
             interval=1,
-            backupCount=DAYS_TO_KEEP,  # 🔥 keep last 7 logs
+            backupCount=DAYS_TO_KEEP,
             encoding="utf-8",
             utc=False
         )
@@ -49,13 +52,36 @@ def setup_logging():
         handlers=handlers
     )
 
-    logging.info("========== PROGRAM START ==========")
 
 setup_logging()
 
+# ================= API =================
 def info(text):
     logging.info(text)
 
 
 def error(text):
     logging.error(text)
+
+
+def warn(text):
+    """
+    Print a big, eye-catching warning.
+    Colors the message yellow in the terminal and logs it normally.
+    """
+    logging.warning(text)  # log normally
+
+    # Build terminal message
+    border = "*" * 80
+    warning_title = Fore.YELLOW + Style.BRIGHT + "!!! WARNING !!!" + Style.RESET_ALL
+    message = f"{Fore.YELLOW}{text}{Style.RESET_ALL}"
+
+    out = ("\n" + border + "\n")
+    out += (warning_title + "\n")
+    out += (("-" * len(border)) + "\n")
+    out += (message + "\n")
+    out += (border + "\n")
+
+    logging.info(text)
+
+

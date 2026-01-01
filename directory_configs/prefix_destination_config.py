@@ -4,6 +4,7 @@ from utils.config_utils import get_config
 import textoutputcontroller as toc
 from .registry import register
 import ast
+import os
 
 @register
 class PrefixDestinationConfig(Config):
@@ -15,17 +16,17 @@ class PrefixDestinationConfig(Config):
             table = dict()
 
         while True:
-            print("\nCurrent prefix → destination mappings:")
+            print("Current prefix --> destination mappings:")
             if table:
                 for i, (prefix, folder) in enumerate(table.items(), 1):
-                    print(f"  {i}. '{prefix}' → {folder}")
+                    print(f"  {i}. '{prefix}' --> {folder}")
             else:
                 print("  (none)")
 
             print("\nChoose an action:")
             print("  [A] Add a prefix")
             print("  [D] Delete a prefix")
-            print("  [S] Stop")
+            print("  [S] Save & Stop")
 
             choice = input("> ").strip().lower()
 
@@ -61,10 +62,16 @@ class PrefixDestinationConfig(Config):
         # Return as string for storage
         return str(table)
 
-    def resolve_helper(self, source_filename, source_filepath, prov_dst_dir, config_value):
-        config = ast.literal_eval(config_value)
+    def resolve_helper(self, resolve_params):
+        config = ast.literal_eval(self.config_value)
         for key, folder in config.items():
-            if source_filename.startswith(key):
-                toc.info(f"Prefix '{key}' matched with {source_filename}")
+            if resolve_params.src_filename.startswith(key):
+                toc.info(f"Prefix '{key}' matched with {resolve_params.src_filename}")
+                if not os.path.isdir(folder):
+                    toc.error(f"The destination folder '{folder}' of the prefix '{key}' does not exist. Did your folder structure change ? Please replace the folder or remove the prefix, ")
+                    self.load_prompt_and_save()
+                    self.resolve_helper(resolve_params)
+                    break
                 return folder
-        return prov_dst_dir
+
+        return resolve_params.dst_dirpath

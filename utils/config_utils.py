@@ -3,7 +3,7 @@ import sys
 
 def get_config():
     exe_dir = os.path.dirname(os.path.abspath(sys.executable))
-    config_path = os.path.join(exe_dir, "config.txt")
+    config_path = os.path.join(exe_dir, "backup.config")
 
     if not os.path.isfile(config_path):
         return {}
@@ -21,7 +21,7 @@ def get_config():
 
 def overwrite_config(config):
     exe_dir = os.path.dirname(os.path.abspath(sys.executable))
-    config_path = os.path.join(exe_dir, "config.txt")
+    config_path = os.path.join(exe_dir, "backup.config")
 
     with open(config_path, "w", encoding="utf-8") as f:
         for k, v in config.items():

@@ -26,12 +26,12 @@ class ReplaceFilesConfig(Config):
         else:
             return "False"
 
-    def resolve_helper(self, source_filename, source_filepath, prov_dst_dir, config_value):
-        if config_value == "True":
-            dst_path = os.path.join(prov_dst_dir, source_filename)
+    def resolve_helper(self, resolve_params):
+        if resolve_params.config_value == "True":
+            dst_path = os.path.join(resolve_params.dst_dirpath, resolve_params.src_filename)
             if os.path.isfile(dst_path):
                 os.remove(dst_path)
             return dst_path
         else:
-            return self.get_unique_path(prov_dst_dir, source_filename)
+            return self.get_unique_path(resolve_params.dst_dirpath, resolve_params.src_filename)
 

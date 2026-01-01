@@ -9,7 +9,6 @@ def register(cls):
 def load_registry():
     global DIRECTORY_CONFIGS
 
-    # Import your resolvers here. Order matters.
     from . import prefix_destination_config 
     from . import default_destination_config
     from . import org_by_curr_year_config
