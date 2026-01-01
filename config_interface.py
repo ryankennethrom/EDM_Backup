@@ -2,11 +2,14 @@ from directory_configs.registry import DIRECTORY_CONFIGS
 from name_configs.registry import NAME_CONFIGS
 from skip_configs.registry import SKIP_CONFIGS
 from source_configs.registry import SOURCE_CONFIGS
+from data_classes import *
+from presentations import *
+import ast
 
 def main():
     # Collect all config objects
     configs = SOURCE_CONFIGS + DIRECTORY_CONFIGS + NAME_CONFIGS + SKIP_CONFIGS
-    print(configs)
+
     # Map number → config object for menu
     config_map = {str(i + 1): cfg for i, cfg in enumerate(configs)}
 
@@ -15,10 +18,22 @@ def main():
         for num, cfg in config_map.items():
             # Get current value for display, fallback to empty string if not available
             try:
-                value = cfg.get_config_value()
+                raw_value = cfg.get_config_value()
+                value = raw_value
             except AttributeError:
                 value = "(no value)"
-            print(f"  [{num}] {cfg.__class__.__name__}: {value}")
+            if isinstance(value, list):
+                params = ListPresentationParameters()
+                params.string_list = value
+                print(f"  [{num}] {cfg.__class__.__name__}:")
+                ListPresentation.present(params)
+            elif isinstance(value, dict):
+                params = DictionaryPresentationParameters()
+                params.string_dict = value
+                print(f"  [{num}] {cfg.__class__.__name__}:")
+                DictionaryPresentation.present(params)
+            else:
+                print(f"  [{num}] {cfg.__class__.__name__}: {value}")
         print("  [X] Exit")
 
         choice = input("\nSelect a config to reset or X to exit: ").strip().lower()
@@ -37,4 +52,7 @@ def main():
             print("Invalid choice. Enter a number or X to exit.")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(f"Config Interface Error: {e}")

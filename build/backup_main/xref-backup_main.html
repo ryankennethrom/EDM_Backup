@@ -171,7 +171,7 @@ imports:
  &#8226;   <a href="#reprlib">reprlib</a>
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#skip_configs.registry">skip_configs.registry</a>
- &#8226;   <a href="#source_config">source_config</a>
+ &#8226;   <a href="#source_configs.registry">source_configs.registry</a>
  &#8226;   <a href="#sre_compile">sre_compile</a>
  &#8226;   <a href="#sre_constants">sre_constants</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
@@ -1117,10 +1117,12 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#directory_configs.org_by_curr_year_config">directory_configs.org_by_curr_year_config</a>
+    <a href="#directory_configs.created_year_org_config">directory_configs.created_year_org_config</a>
+ &#8226;   <a href="#directory_configs.org_by_curr_year_config">directory_configs.org_by_curr_year_config</a>
  &#8226;   <a href="#directory_configs.prefix_destination_config">directory_configs.prefix_destination_config</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#skip_configs.skip_files_config">skip_configs.skip_files_config</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
  &#8226;   <a href="#traceback">traceback</a>
 
   </div>
@@ -1638,6 +1640,7 @@ imports:
 imported by:
     <a href="#_strptime">_strptime</a>
  &#8226;   <a href="#calendar">calendar</a>
+ &#8226;   <a href="#directory_configs.created_year_org_config">directory_configs.created_year_org_config</a>
  &#8226;   <a href="#directory_configs.org_by_curr_year_config">directory_configs.org_by_curr_year_config</a>
  &#8226;   <a href="#email.utils">email.utils</a>
  &#8226;   <a href="#smtplib">smtplib</a>
@@ -1692,9 +1695,14 @@ imported by:
 <div class="node">
   <a name="directory_configs.created_year_org_config"></a>
   <a target="code" href="///C:/Users/unloc/Github/EDM_Backup/directory_configs/created_year_org_config.py" type="text/plain"><tt>directory_configs.created_year_org_config</tt></a>
-<span class="moduletype">InvalidSourceModule</span>  <div class="import">
+<span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#directory_configs">directory_configs</a>
+    <a href="#ast">ast</a>
+ &#8226;   <a href="#datetime">datetime</a>
+ &#8226;   <a href="#directory_configs">directory_configs</a>
+ &#8226;   <a href="#directory_configs.registry">directory_configs.registry</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#templates">templates</a>
 
   </div>
   <div class="import">
@@ -1786,6 +1794,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#backup_main.py">backup_main.py</a>
+ &#8226;   <a href="#directory_configs.created_year_org_config">directory_configs.created_year_org_config</a>
  &#8226;   <a href="#directory_configs.default_destination_config">directory_configs.default_destination_config</a>
  &#8226;   <a href="#directory_configs.org_by_curr_year_config">directory_configs.org_by_curr_year_config</a>
  &#8226;   <a href="#directory_configs.prefix_destination_config">directory_configs.prefix_destination_config</a>
@@ -6214,6 +6223,7 @@ imported by:
  &#8226;   <a href="#backup_main.py">backup_main.py</a>
  &#8226;   <a href="#bz2">bz2</a>
  &#8226;   <a href="#contextlib">contextlib</a>
+ &#8226;   <a href="#directory_configs.created_year_org_config">directory_configs.created_year_org_config</a>
  &#8226;   <a href="#directory_configs.org_by_curr_year_config">directory_configs.org_by_curr_year_config</a>
  &#8226;   <a href="#email.utils">email.utils</a>
  &#8226;   <a href="#fnmatch">fnmatch</a>
@@ -6243,6 +6253,8 @@ imported by:
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#skip_configs.skip_files_config">skip_configs.skip_files_config</a>
  &#8226;   <a href="#socket">socket</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#tarfile">tarfile</a>
@@ -6907,11 +6919,84 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="source_config"></a>
-  <a target="code" href="" type="text/plain"><tt>source_config</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
+  <a name="source_configs"></a>
+  <a target="code" href="///C:/Users/unloc/Github/EDM_Backup/source_configs/__init__.py" type="text/plain"><tt>source_configs</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.registry">source_configs.registry</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="source_configs.add_sources_config"></a>
+  <a target="code" href="///C:/Users/unloc/Github/EDM_Backup/source_configs/add_sources_config.py" type="text/plain"><tt>source_configs.add_sources_config</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#ast">ast</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.registry">source_configs.registry</a>
+ &#8226;   <a href="#templates">templates</a>
+ &#8226;   <a href="#utils.dir_utils">utils.dir_utils</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.registry">source_configs.registry</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="source_configs.registry"></a>
+  <a target="code" href="///C:/Users/unloc/Github/EDM_Backup/source_configs/registry.py" type="text/plain"><tt>source_configs.registry</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
+
+  </div>
+  <div class="import">
 imported by:
     <a href="#backup_main.py">backup_main.py</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="source_configs.source_config"></a>
+  <a target="code" href="///C:/Users/unloc/Github/EDM_Backup/source_configs/source_config.py" type="text/plain"><tt>source_configs.source_config</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#os">os</a>
+ &#8226;   <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.registry">source_configs.registry</a>
+ &#8226;   <a href="#templates">templates</a>
+ &#8226;   <a href="#utils.dir_utils">utils.dir_utils</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#source_configs">source_configs</a>
+ &#8226;   <a href="#source_configs.registry">source_configs.registry</a>
 
   </div>
 
@@ -7289,11 +7374,14 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#directory_configs.default_destination_config">directory_configs.default_destination_config</a>
+    <a href="#directory_configs.created_year_org_config">directory_configs.created_year_org_config</a>
+ &#8226;   <a href="#directory_configs.default_destination_config">directory_configs.default_destination_config</a>
  &#8226;   <a href="#directory_configs.org_by_curr_year_config">directory_configs.org_by_curr_year_config</a>
  &#8226;   <a href="#directory_configs.prefix_destination_config">directory_configs.prefix_destination_config</a>
  &#8226;   <a href="#name_configs.replace_files_config">name_configs.replace_files_config</a>
  &#8226;   <a href="#skip_configs.skip_files_config">skip_configs.skip_files_config</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
  &#8226;   <a href="#templates.config">templates.config</a>
 
   </div>
@@ -7831,6 +7919,8 @@ imported by:
     <a href="#directory_configs.default_destination_config">directory_configs.default_destination_config</a>
  &#8226;   <a href="#directory_configs.prefix_destination_config">directory_configs.prefix_destination_config</a>
  &#8226;   <a href="#skip_configs.skip_files_config">skip_configs.skip_files_config</a>
+ &#8226;   <a href="#source_configs.add_sources_config">source_configs.add_sources_config</a>
+ &#8226;   <a href="#source_configs.source_config">source_configs.source_config</a>
 
   </div>
 

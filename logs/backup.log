@@ -1,9 +1,13 @@
-2025-12-31 12:37:26 - INFO - ========== PROGRAM START ==========
-2025-12-31 12:38:33 - INFO - ========== PROGRAM START ==========
-2025-12-31 12:40:57 - INFO - ========== PROGRAM START ==========
-2025-12-31 12:42:09 - INFO - ========== PROGRAM START ==========
-2025-12-31 12:48:41 - INFO - ========== PROGRAM START ==========
-2025-12-31 12:49:30 - INFO - ========== PROGRAM START ==========
-2025-12-31 12:56:01 - INFO - ========== PROGRAM START ==========
-2025-12-31 12:57:37 - INFO - ========== PROGRAM START ==========
-2025-12-31 12:59:31 - INFO - ========== PROGRAM START ==========
+2026-01-01 00:13:36 - INFO - ========== PROGRAM START ==========
+2026-01-01 00:13:36 - INFO - 
+=== Configuration Interface ===
+2026-01-01 00:13:36 - INFO -   [1] SourceConfig: None
+2026-01-01 00:13:36 - INFO -   [2] AdditionalSourcesConfig: None
+2026-01-01 00:13:36 - INFO -   [3] PrefixDestinationConfig: None
+2026-01-01 00:13:36 - INFO -   [4] DefaultDestinationConfig: None
+2026-01-01 00:13:36 - INFO -   [5] OrganizeByCurrentYearConfig: None
+2026-01-01 00:13:36 - INFO -   [6] OrganizeByCreatedYearConfig: None
+2026-01-01 00:13:36 - INFO -   [7] ReplaceFilesConfig: None
+2026-01-01 00:13:36 - INFO -   [8] SkipFilesConfig: None
+2026-01-01 00:13:36 - INFO -   [X] Exit
+2026-01-01 00:14:31 - INFO - Exiting configuration interface.

@@ -22,12 +22,12 @@ class ReplaceFilesConfig(Config):
         ).strip().lower()
 
         if answer in ("", "r", "replace"):
-            return "true"
+            return "True"
         else:
-            return "false"
+            return "False"
 
     def resolve_helper(self, source_filename, source_filepath, prov_dst_dir, config_value):
-        if config_value == "true":
+        if config_value == "True":
             dst_path = os.path.join(prov_dst_dir, source_filename)
             if os.path.isfile(dst_path):
                 os.remove(dst_path)

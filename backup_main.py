@@ -11,13 +11,13 @@ if __name__ == "__main__":
         from skip_configs.registry import SKIP_CONFIGS
         toc.info(f"Imported skip configs")
 
-        from source_config.registry import SOURCE_CONFIGS
+        from source_configs.registry import SOURCE_CONFIGS
         toc.info(f"Import source configs")
 
         import os
         import shutil
 
-        def isFileSkip(source_filename, source_filepath, rov_dst_dir):
+        def isFileSkip(source_filename, source_filepath, prov_dst_dir):
             toc.info(f"Resolving file inclusion")
             for config in SKIP_CONFIGS:
                 if config.resolve(source_filename, source_filepath, prov_dst_dir) == True:
