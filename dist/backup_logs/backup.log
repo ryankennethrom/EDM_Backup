@@ -1,0 +1,12 @@
+2026-01-23 20:38:41 - INFO - Backing up files from C:/Users/unloc/Desktop/Test_SRC
+2026-01-23 20:38:41 - INFO - Backing up C:\Users\unloc\Desktop\Test_SRC\adwadhiHiasd.txt
+2026-01-23 20:38:41 - INFO - Resolving directory
+2026-01-23 20:38:51 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-23 20:38:55 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-23 20:38:55 - ERROR - Error occured : 'str' object has no attribute 'get'
+2026-01-23 20:42:03 - INFO - Backing up files from C:/Users/unloc/Desktop/Test_SRC
+2026-01-23 20:42:03 - INFO - Backing up C:\Users\unloc\Desktop\Test_SRC\adwadhiHiasd.txt
+2026-01-23 20:42:03 - INFO - Resolving directory
+2026-01-23 20:42:03 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-23 20:42:03 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-23 20:42:03 - ERROR - Error occured : 'str' object has no attribute 'get'

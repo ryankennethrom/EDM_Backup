@@ -65,6 +65,8 @@ class PatternDestinationConfig(Config):
                 destinations = []
         else:
             destinations = []
+        
+        print(destinations)
 
         while True:
             print("\n=== Pattern --> Destination Rules ===\n")
