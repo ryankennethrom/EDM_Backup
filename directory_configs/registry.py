@@ -13,7 +13,7 @@ def load_registry():
     from . import default_destination_config
     from . import org_by_curr_year_config
     from . import created_year_org_config
-
+    from . import pattern_destination_config
     
     instantiated = []
     for config in DIRECTORY_CONFIGS:
