@@ -6,6 +6,7 @@ from skip_configs.registry import SKIP_CONFIGS
 from source_configs.registry import SOURCE_CONFIGS
 import os
 import shutil
+from utils.dir_utils import resolve_shortcut
 
 def isFileSkip(resolve_params):
     toc.info(f"Resolving file inclusion")
@@ -33,8 +34,12 @@ if __name__ == "__main__":
             
             count = 0
             for name in src_filenames:
+
                 src_path = os.path.abspath(os.path.join(src, name))
-                
+
+                if name.endswith(".lnk"):
+                    name = os.path.basename(resolve_shortcut(src_path))
+
                 toc.info(f"Backing up {src_path}")
                 
                 dst_path = ""

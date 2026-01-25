@@ -1,13 +1,11 @@
-# How to generate the Backup.exe file
+# How to generate the exe files
 
-pyinstaller --onefile BackupX.py
+./build.sh
 
-# How to generate the BackupSettings.exe file
+But first, you need to run "chmod +x build.sh" one time on fresh clone
 
-pyinstaller --onefile BackupSettings.py
-
-# What to do next
+# What you can improve 
 
 * When removing files to skip, we should just be able to enter a number
 * Improve to see better where the files are going in the logs
-* Make it so that when picking a filename, we can pick a .lnk link instead of manually inputting it in the config
+* When picking a .lnk file, it will treat it as if it its name is the original file instead of the shortcut file's name. Fix this.

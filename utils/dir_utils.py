@@ -1,6 +1,12 @@
 import tkinter as tk
 from tkinter import filedialog
 import os
+import win32com.client
+
+def resolve_shortcut(lnk_path):
+    shell = win32com.client.Dispatch("WScript.Shell")
+    shortcut = shell.CreateShortcut(lnk_path)
+    return shortcut.TargetPath  # Returns the target path of the shortcut
 
 def pick_filename(title):
     root = tk.Tk()
@@ -13,6 +19,9 @@ def pick_filename(title):
 
     if not path:
         return ""
+    
+    if path.endswith(".lnk"):
+        return f"{os.path.basename(path)}.lnk"
 
     return os.path.basename(path)
 
