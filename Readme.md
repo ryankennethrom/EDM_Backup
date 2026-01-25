@@ -8,7 +8,7 @@ EDM_Backup/dist/BackupSettings.exe
 
 # How to move the files ?
 
-execute EDM_Backup/dist/BackupX.exe
+Double click EDM_Backup/dist/BackupX.exe
 
 # How to generate the exe files
 
