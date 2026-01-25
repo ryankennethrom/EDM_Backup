@@ -1,3 +1,7 @@
+# About
+
+Automate moving files from folder to folder or drive to drive using a simple interface.
+
 # How to generate the exe files
 
 ./build.sh
