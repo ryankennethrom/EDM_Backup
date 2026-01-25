@@ -6,10 +6,12 @@ import os
 
 @register
 class SkipNonExistentDestinationConfig(Config):
+    def get_settings_description(self):
+        return "Skip backup file if the destination folder doesn't exist anymore ?"
 
     def prompt(self, prev_config_value):
         answer = input(
-                "Skip files with nonexistent destination ? [Enter Y/n] "
+                f"{self.get_settings_description()} [Enter Y/n] "
         ).strip().lower()
 
         if answer not in ("", "y", "yes"):

@@ -5,6 +5,10 @@ from source_configs.registry import SOURCE_CONFIGS
 from data_classes import *
 from presentations import *
 import ast
+import os
+
+def clear_screen():
+    os.system('cls')
 
 def main():
     # Collect all config objects
@@ -22,21 +26,11 @@ def main():
                 value = raw_value
             except AttributeError:
                 value = "(no value)"
-            if isinstance(value, list):
-                params = ListPresentationParameters()
-                params.string_list = value
-                print(f"  [{num}] {cfg.__class__.__name__}:")
-                ListPresentation.present(params)
-            elif isinstance(value, dict):
-                params = DictionaryPresentationParameters()
-                params.string_dict = value
-                print(f"  [{num}] {cfg.__class__.__name__}:")
-                DictionaryPresentation.present(params)
-            else:
-                print(f"  [{num}] {cfg.__class__.__name__}: {value}")
+            print(f"  [{num}] {cfg.__class__.__name__.removesuffix("Config")}{"*" if value is None else ""}")
         print("  [X] Exit")
 
         choice = input("\nSelect a config to reset or X to exit: ").strip().lower()
+        clear_screen()
 
         if choice == "x":
             print("Exiting configuration interface.")
@@ -44,10 +38,20 @@ def main():
 
         elif choice in config_map:
             cfg_obj = config_map[choice]
-            print(f"\n--- Resetting {cfg_obj.__class__.__name__} ---")
-            new_value = cfg_obj.load_prompt_and_save()
-            print(f"\nUpdated config for {cfg_obj.__class__.__name__}: {new_value}\n")
-
+            print("[Current Value]")
+            cfg_obj.print_report()
+            answer = input("Proceed with the reset ? [Y/n] ")
+            clear_screen()
+            if answer.lower() in ("y", "yes", "1"):
+                print("==> Reset Started. Please answer the following prompts ... ")
+                new_value = cfg_obj.load_prompt_and_save()
+                clear_screen()
+                print("[Updated Value]")
+                cfg_obj.print_report()
+                input("Press any key to go back to settings (continue) ")
+                clear_screen()
+            else:
+                clear_screen()
         else:
             print("Invalid choice. Enter a number or X to exit.")
 

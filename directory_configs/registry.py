@@ -9,11 +9,10 @@ def register(cls):
 def load_registry():
     global DIRECTORY_CONFIGS
 
-    from . import prefix_destination_config 
+    from . import pattern_destination_config
     from . import default_destination_config
     from . import org_by_curr_year_config
     from . import created_year_org_config
-    from . import pattern_destination_config
     
     instantiated = []
     for config in DIRECTORY_CONFIGS:

@@ -7,6 +7,9 @@ import textoutputcontroller as toc
 
 @register
 class OrganizeByCreatedYearConfig(Config):
+    def get_settings_description(self):
+        return "Organize files by the year they are created ?"
+
     def prompt(self, prev_config_value):
         answer = input("Organize files by year they are created ? [Enter Y/n]: ").strip().lower()
         return answer in ("", "y", "yes")

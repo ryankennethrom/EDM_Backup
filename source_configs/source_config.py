@@ -6,6 +6,9 @@ import textoutputcontroller as toc
 
 @register
 class SourceConfig(Config):
+    def get_settings_description(self):
+        return "What folder should be backed up ?"
+
     def prompt(self, prev_config_value):
         answer = input(
                 "Assign a folder to back up? [Enter Y/n]: "

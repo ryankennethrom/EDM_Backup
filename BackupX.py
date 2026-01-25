@@ -49,14 +49,13 @@ if __name__ == "__main__":
                     params.src_filename = name
                     params.src_filepath = src_path
                     params.dst_dirpath = dst_path
-
                     resolved_dst = dir_config.resolve(params)
                     if not resolved_dst.startswith(dst_path):
                         raise Exception(
-                                f"One of your directory configs is overwriting previous config's changes."
-                                "Make sure your directory configs are imported in the right order."
-                                f"Config Name: {dir_config.__class__.__name__}"
-                                f"Input path: {dst_path}"
+                                f"One of your directory configs is overwriting previous config's changes.\n"
+                                "Make sure your directory configs are imported in the right order in directory/registry.py.\n"
+                                f"Config Name: {dir_config.__class__.__name__}\n"
+                                f"Input path: {dst_path}\n"
                                 f"Output path: {resolved_dst}\n"
                         )
                     dst_path = resolved_dst
@@ -80,10 +79,11 @@ if __name__ == "__main__":
                     name_resolved_dst = name_config.resolve(params)
                     if not name_resolved_dst.startswith(dst_path):
                         raise Exception(
-                                f"One of your name configs is overwriting previous config's changes."
-                                f"Config Name: {name_config.__class__.__name__}"
-                                f"Input path: {dst_path}"
-                                f"Output path: {named_resolved_dst}"
+                                f"One of your name configs is overwriting previous config's changes.\n"
+                                "Make sure your name configs are imported in the right order in name_configs/registry.py.\n"
+                                f"Config Name: {name_config.__class__.__name__}\n"
+                                f"Input path: {dst_path}\n"
+                                f"Output path: {named_resolved_dst}\n"
                         )
                     dst_path = name_resolved_dst
                     to_log += f"===> {dst_path}"

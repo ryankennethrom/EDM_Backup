@@ -2,7 +2,6 @@ import logging
 import os
 import sys
 from logging.handlers import TimedRotatingFileHandler
-from colorama import Fore, Style, init
 
 # ================= CONFIG =================
 WRITE_LOGS = True
@@ -10,9 +9,6 @@ WRITE_TO_TERMINAL = True
 DAYS_TO_KEEP = 7
 LOG_FILENAME = "backup.log"
 # =========================================
-
-# Initialize colorama for Windows
-init(autoreset=True)
 
 def setup_logging():
     # Detect running as EXE or script
@@ -62,26 +58,4 @@ def info(text):
 
 def error(text):
     logging.error(text)
-
-
-def warn(text):
-    """
-    Print a big, eye-catching warning.
-    Colors the message yellow in the terminal and logs it normally.
-    """
-    logging.warning(text)  # log normally
-
-    # Build terminal message
-    border = "*" * 80
-    warning_title = Fore.YELLOW + Style.BRIGHT + "!!! WARNING !!!" + Style.RESET_ALL
-    message = f"{Fore.YELLOW}{text}{Style.RESET_ALL}"
-
-    out = ("\n" + border + "\n")
-    out += (warning_title + "\n")
-    out += (("-" * len(border)) + "\n")
-    out += (message + "\n")
-    out += (border + "\n")
-
-    logging.info(text)
-
 

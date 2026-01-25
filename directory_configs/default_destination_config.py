@@ -6,9 +6,12 @@ import textoutputcontroller as toc
 
 @register
 class DefaultDestinationConfig(Config):
+    def get_settings_description(self):
+        return "Assign a default destination for files to backup ?"
+
     def prompt(self, prev_config_value):
         answer = input(
-            "Assign a default destination folder ? [Enter Y/n] "
+            f"{self.get_settings_description()} [Enter Y/n] "
         ).strip().lower()
 
         if answer in ("", "y", "yes"):

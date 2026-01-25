@@ -8,6 +8,8 @@ import textoutputcontroller as toc
 
 @register
 class AdditionalSourcesConfig(Config):
+    def get_settings_description(self):
+        return "Do you have any additional folders to backup ?"
 
     def prompt(self, prev_config_value):
         """
@@ -82,6 +84,16 @@ class AdditionalSourcesConfig(Config):
 
         # Store as string for config persistence
         return str(selected_dirs)
+    
+    def get_value_pretty(self):
+        if self.get_config_value() is None:
+            return ""
+        value = ast.literal_eval(self.get_config_value()) 
+
+        out = "\n\n"
+        for i, item in enumerate(value):
+            out += f"    {i+1}. {item} \n"
+        return out
 
     def resolve_helper(self, resolve_params):
         sources = ast.literal_eval(self.config_value)

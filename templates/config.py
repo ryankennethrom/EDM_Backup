@@ -34,7 +34,15 @@ class Config(Singleton):
     def get_config_value(self):
         self.load_config()
         return self.config_value
-    
+
+    def get_value_pretty(self):
+        return self.get_config_value()
+
+    def print_report(self):
+        print(f"Config Name: {self.__class__.__name__}")
+        print(f"Description: {self.get_settings_description()}")
+        print(f"Config Value: {self.get_value_pretty()}")
+
     def load_prompt_and_save(self):
         self.load_config()
         new_config_value = self.prompt(self.config_value)
@@ -47,3 +55,6 @@ class Config(Singleton):
     # Returns the same provisional destination directory with or without additional subfolders/subfiles
     def resolve_helper(self, resolve_params):   
         raise Exception("This function must be overriden")
+    
+    def get_settings_description(self):
+        raise Exception(f"get_settings_description() must be overriden under {self.__class__.__name__}")

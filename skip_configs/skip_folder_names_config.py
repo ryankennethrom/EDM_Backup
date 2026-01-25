@@ -8,6 +8,8 @@ import os
 
 @register
 class SkipFolderNamesConfig(Config):
+    def get_settings_description(self):
+        return "Skip backing up folders based on their foldername ?"
 
     def prompt(self, prev_config_value):
         """

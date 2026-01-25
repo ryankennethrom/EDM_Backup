@@ -56,6 +56,37 @@ def match_pattern(pattern: dict, subject: str) -> bool:
 
 @register
 class PatternDestinationConfig(Config):
+    def get_settings_description(self):
+        return "Backup files into specific destination folders if certain patterns exist in the filename ?"
+
+    def get_value_pretty(self):
+        value = self.get_config_value()
+        if value:
+            try:
+                destinations = ast.literal_eval(value)
+            except Exception:
+                print("Invalid previous config, resetting.")
+                destinations = []
+        else:
+            destinations = []
+        out = "\n\n"
+        for i, d in enumerate(destinations):
+            patterns = d["patterns"]
+
+            out += f"   [{i+1}] Put file in {d["destination_directory"]}\n"
+
+            for i, p in enumerate(patterns):
+                out += (
+                    f"      <{i + 1}> "
+                    f"if file {p.get('predicate')} '{p.get('pattern')}' | "
+                    f"match_mode={p.get('match_mode', 'literal')} | "
+                    f"case_sensitive={'yes' if p.get('case_sensitive') else 'no'} | "
+                    f"negated={'yes' if p.get('negated') else 'no'} \n"
+                )
+        return out
+
+        
+
     def prompt(self, prev_config_value):
         if prev_config_value:
             try:
@@ -66,8 +97,6 @@ class PatternDestinationConfig(Config):
         else:
             destinations = []
         
-        print(destinations)
-
         while True:
             print("\n=== Pattern --> Destination Rules ===\n")
 
@@ -161,14 +190,15 @@ class PatternDestinationConfig(Config):
 
     def resolve_helper(self, resolve_params):
         src_filename = resolve_params.src_filename
-        destinations = self.config_value
         
+        destinations = ast.literal_eval(self.config_value)
+
         for dest in destinations:
             patterns = dest.get("patterns", [])
 
             for p in patterns:
                 if match_pattern(p, src_filename):
                     return dest["destination_directory"]
-        return resolve.dst_dirpath
+        return resolve_params.dst_dirpath
 
 

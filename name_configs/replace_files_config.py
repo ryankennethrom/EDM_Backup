@@ -4,6 +4,9 @@ import os
 
 @register
 class ReplaceFilesConfig(Config):
+    def get_settings_description(self):
+        return "Replace files in the destination (True) or keep copies in case of duplicate (False) ?"
+
     def get_unique_path(self, dst_dir, filename):
         base, ext = os.path.splitext(filename)
         counter = 1
@@ -17,7 +20,7 @@ class ReplaceFilesConfig(Config):
 
     def prompt(self, prev_config_value):
         answer = input(
-            "Replace files in destination or keep copies?\n"
+            f"{self.get_settings_description()}\n"
             "[Enter R to replace / C to keep copies] "
         ).strip().lower()
 

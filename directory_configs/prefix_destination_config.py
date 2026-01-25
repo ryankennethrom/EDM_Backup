@@ -6,8 +6,10 @@ from .registry import register
 import ast
 import os
 
-@register
 class PrefixDestinationConfig(Config):
+    def get_settings_description(self):
+        return "Assign destination folders to certain prefixes ?"
+
     def prompt(self, prev_config_value):
         # Pre-populate table from existing config (string → dict)
         try:

@@ -7,8 +7,11 @@ import textoutputcontroller as toc
 
 @register
 class OrganizeByCurrentYearConfig(Config):
+    def get_settings_description(self):
+        return "Organize files by year backed up in the destination folder ?"
+
     def prompt(self, prev_config_value):
-        answer = input("Organize files by current year? [Enter Y/n]: ").strip().lower()
+        answer = input(f"{self.get_settings_description()} [Enter Y/n]: ").strip().lower()
         return answer in ("", "y", "yes")
 
     def resolve_helper(self, resolve_params):
