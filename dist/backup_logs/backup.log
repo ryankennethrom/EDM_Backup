@@ -96,3 +96,120 @@
 2026-01-25 11:09:58 - INFO - Backed up a total of 0 files for the source C:/Users/ryanr/OneDrive/Documentos/DummySRC
 2026-01-25 11:09:58 - INFO - Backing up files from C:/Users/ryanr/OneDrive/Documentos/DummySRC2
 2026-01-25 11:09:58 - INFO - Backed up a total of 0 files for the source C:/Users/ryanr/OneDrive/Documentos/DummySRC2
+2026-01-25 11:24:39 - INFO - Backing up files from C:/Users/ryanr/OneDrive/Documentos/DummySRC
+2026-01-25 11:24:39 - INFO - Backing up C:\Users\ryanr\OneDrive\Documentos\DummySRC\adw.txt
+2026-01-25 11:24:39 - INFO - Resolving directory
+2026-01-25 11:24:39 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-25 11:24:39 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-25 11:24:39 - INFO -  ===PatternDestinationConfig===>  ===DefaultDestinationConfig===>  ===OrganizeByCurrentYearConfig===>  ===OrganizeByCreatedYearConfig===> 
+2026-01-25 11:24:39 - INFO - Resolving filename
+2026-01-25 11:24:39 - INFO -  ===ReplaceFilesConfig===> adw.txt
+2026-01-25 11:24:39 - INFO - Resolving file inclusion
+2026-01-25 11:24:39 - ERROR - Failed to back up the file. Could not resolve destination. Notify Ryan or whoever is maintaining the backup scripts. Press enter to continue.
+2026-01-25 11:46:56 - INFO - Backing up files from C:/Users/ryanr/OneDrive/Documentos/DummySRC
+2026-01-25 11:46:56 - INFO - Backing up C:\Users\ryanr\OneDrive\Documentos\DummySRC\adw.txt
+2026-01-25 11:46:56 - INFO - Resolving directory
+2026-01-25 11:46:56 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-25 11:46:56 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-25 11:46:56 - INFO -  ===PatternDestinationConfig===>  ===DefaultDestinationConfig===>  ===OrganizeByCurrentYearConfig===>  ===OrganizeByCreatedYearConfig===> 
+2026-01-25 11:46:56 - INFO - Resolving filename
+2026-01-25 11:46:56 - INFO -  ===ReplaceFilesConfig===> adw.txt
+2026-01-25 11:46:56 - INFO - Resolving file inclusion
+2026-01-25 11:46:56 - ERROR - Failed to back up the file. Could not resolve destination. Notify Ryan or whoever is maintaining the backup scripts. Press enter to continue.
+2026-01-25 11:50:50 - INFO - Backing up files from C:/Users/ryanr/OneDrive/Documentos/DummySRC
+2026-01-25 11:50:50 - INFO - Backing up C:\Users\ryanr\OneDrive\Documentos\DummySRC\adw.txt
+2026-01-25 11:50:50 - INFO - Resolving directory
+2026-01-25 11:50:50 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-25 11:50:50 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-25 11:50:50 - INFO -  ===PatternDestinationConfig===>  ===DefaultDestinationConfig===>  ===OrganizeByCurrentYearConfig===>  ===OrganizeByCreatedYearConfig===> 
+2026-01-25 11:50:50 - INFO - Resolving filename
+2026-01-25 11:50:50 - INFO -  ===ReplaceFilesConfig===> adw.txt
+2026-01-25 11:50:50 - INFO - Resolving file inclusion
+2026-01-25 11:50:50 - ERROR - Failed to back up the file. Could not resolve destination. Notify Ryan or whoever is maintaining the backup scripts. Press enter to continue.
+2026-01-25 11:50:51 - INFO - Skipping adw.txt because of SkipDestinationUndefinedConfig
+2026-01-25 11:50:51 - INFO - Backing up C:\Users\ryanr\OneDrive\Documentos\DummySRC\BackupX - Shortcut.lnk
+2026-01-25 11:50:51 - INFO - Resolving directory
+2026-01-25 11:50:51 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-25 11:50:51 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-25 11:50:51 - INFO -  ===PatternDestinationConfig===>  ===DefaultDestinationConfig===>  ===OrganizeByCurrentYearConfig===>  ===OrganizeByCreatedYearConfig===> 
+2026-01-25 11:50:51 - INFO - Resolving filename
+2026-01-25 11:50:51 - INFO -  ===ReplaceFilesConfig===> BackupX - Shortcut.lnk
+2026-01-25 11:50:51 - INFO - Resolving file inclusion
+2026-01-25 11:50:51 - ERROR - Failed to back up the file. Could not resolve destination. Notify Ryan or whoever is maintaining the backup scripts. Press enter to continue.
+2026-01-25 11:50:58 - INFO - Skipping BackupX - Shortcut.lnk because of SkipDestinationUndefinedConfig
+2026-01-25 11:50:58 - INFO - Backing up C:\Users\ryanr\OneDrive\Documentos\DummySRC\skip_file.txt
+2026-01-25 11:50:58 - INFO - Resolving directory
+2026-01-25 11:50:58 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-25 11:50:58 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-25 11:50:58 - INFO -  ===PatternDestinationConfig===>  ===DefaultDestinationConfig===>  ===OrganizeByCurrentYearConfig===>  ===OrganizeByCreatedYearConfig===> 
+2026-01-25 11:50:58 - INFO - Resolving filename
+2026-01-25 11:50:58 - INFO -  ===ReplaceFilesConfig===> skip_file.txt
+2026-01-25 11:50:58 - INFO - Resolving file inclusion
+2026-01-25 11:50:58 - INFO - Skipping skip_file.txt because of SkipFileNamesConfig
+2026-01-25 11:50:58 - INFO - Backed up a total of 0 files for the source C:/Users/ryanr/OneDrive/Documentos/DummySRC
+2026-01-25 11:50:58 - INFO - Backing up files from C:/Users/ryanr/OneDrive/Documentos/DummySRC2
+2026-01-25 11:50:58 - INFO - Backed up a total of 0 files for the source C:/Users/ryanr/OneDrive/Documentos/DummySRC2
+2026-01-25 11:52:05 - INFO - Backing up files from C:/Users/ryanr/OneDrive/Documentos/DummySRC
+2026-01-25 11:52:05 - INFO - Backing up C:\Users\ryanr\OneDrive\Documentos\DummySRC\adw.txt
+2026-01-25 11:52:05 - INFO - Resolving directory
+2026-01-25 11:52:05 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-25 11:52:05 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-25 11:52:05 - INFO -  ===PatternDestinationConfig===>  ===DefaultDestinationConfig===>  ===OrganizeByCurrentYearConfig===>  ===OrganizeByCreatedYearConfig===> 
+2026-01-25 11:52:05 - INFO - Resolving filename
+2026-01-25 11:52:05 - INFO -  ===ReplaceFilesConfig===> adw.txt
+2026-01-25 11:52:05 - INFO - Resolving file inclusion
+2026-01-25 11:52:05 - ERROR - Failed to back up the file. Could not resolve destination. Notify Ryan or whoever is maintaining the backup scripts. Press enter to continue.
+2026-01-25 11:52:06 - INFO - Skipping adw.txt because of SkipDestinationUndefinedConfig
+2026-01-25 11:52:06 - INFO - Backing up C:\Users\ryanr\OneDrive\Documentos\DummySRC\BackupX - Shortcut.lnk
+2026-01-25 11:52:06 - INFO - Resolving directory
+2026-01-25 11:52:06 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-25 11:52:06 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-25 11:52:06 - INFO -  ===PatternDestinationConfig===>  ===DefaultDestinationConfig===>  ===OrganizeByCurrentYearConfig===>  ===OrganizeByCreatedYearConfig===> 
+2026-01-25 11:52:06 - INFO - Resolving filename
+2026-01-25 11:52:06 - INFO -  ===ReplaceFilesConfig===> BackupX(1).exe
+2026-01-25 11:52:06 - INFO - Resolving file inclusion
+2026-01-25 11:52:06 - INFO - Skipping BackupX.exe because of SkipFileNamesConfig
+2026-01-25 11:52:06 - INFO - Backing up C:\Users\ryanr\OneDrive\Documentos\DummySRC\skip_file.txt
+2026-01-25 11:52:06 - INFO - Resolving directory
+2026-01-25 11:52:06 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-25 11:52:06 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-25 11:52:06 - INFO -  ===PatternDestinationConfig===>  ===DefaultDestinationConfig===>  ===OrganizeByCurrentYearConfig===>  ===OrganizeByCreatedYearConfig===> 
+2026-01-25 11:52:06 - INFO - Resolving filename
+2026-01-25 11:52:06 - INFO -  ===ReplaceFilesConfig===> skip_file.txt
+2026-01-25 11:52:06 - INFO - Resolving file inclusion
+2026-01-25 11:52:06 - INFO - Skipping skip_file.txt because of SkipFileNamesConfig
+2026-01-25 11:52:06 - INFO - Backed up a total of 0 files for the source C:/Users/ryanr/OneDrive/Documentos/DummySRC
+2026-01-25 11:52:06 - INFO - Backing up files from C:/Users/ryanr/OneDrive/Documentos/DummySRC2
+2026-01-25 11:52:06 - INFO - Backed up a total of 0 files for the source C:/Users/ryanr/OneDrive/Documentos/DummySRC2
+2026-01-25 11:52:12 - INFO - Backing up files from C:/Users/ryanr/OneDrive/Documentos/DummySRC
+2026-01-25 11:52:12 - INFO - Backing up C:\Users\ryanr\OneDrive\Documentos\DummySRC\adw.txt
+2026-01-25 11:52:12 - INFO - Resolving directory
+2026-01-25 11:52:12 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-25 11:52:12 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-25 11:52:12 - INFO -  ===PatternDestinationConfig===>  ===DefaultDestinationConfig===>  ===OrganizeByCurrentYearConfig===>  ===OrganizeByCreatedYearConfig===> 
+2026-01-25 11:52:12 - INFO - Resolving filename
+2026-01-25 11:52:12 - INFO -  ===ReplaceFilesConfig===> adw.txt
+2026-01-25 11:52:12 - INFO - Resolving file inclusion
+2026-01-25 11:52:12 - ERROR - Failed to back up the file. Could not resolve destination. Notify Ryan or whoever is maintaining the backup scripts. Press enter to continue.
+2026-01-25 11:52:16 - INFO - Skipping adw.txt because of SkipDestinationUndefinedConfig
+2026-01-25 11:52:16 - INFO - Backing up C:\Users\ryanr\OneDrive\Documentos\DummySRC\BackupX - Shortcut.lnk
+2026-01-25 11:52:16 - INFO - Resolving directory
+2026-01-25 11:52:16 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-25 11:52:16 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-25 11:52:16 - INFO -  ===PatternDestinationConfig===>  ===DefaultDestinationConfig===>  ===OrganizeByCurrentYearConfig===>  ===OrganizeByCreatedYearConfig===> 
+2026-01-25 11:52:16 - INFO - Resolving filename
+2026-01-25 11:52:16 - INFO -  ===ReplaceFilesConfig===> BackupX(1).exe
+2026-01-25 11:52:16 - INFO - Resolving file inclusion
+2026-01-25 11:52:16 - INFO - Skipping BackupX.exe because of SkipFileNamesConfig
+2026-01-25 11:52:16 - INFO - Backing up C:\Users\ryanr\OneDrive\Documentos\DummySRC\skip_file.txt
+2026-01-25 11:52:16 - INFO - Resolving directory
+2026-01-25 11:52:16 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-25 11:52:16 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-25 11:52:16 - INFO -  ===PatternDestinationConfig===>  ===DefaultDestinationConfig===>  ===OrganizeByCurrentYearConfig===>  ===OrganizeByCreatedYearConfig===> 
+2026-01-25 11:52:16 - INFO - Resolving filename
+2026-01-25 11:52:16 - INFO -  ===ReplaceFilesConfig===> skip_file.txt
+2026-01-25 11:52:16 - INFO - Resolving file inclusion
+2026-01-25 11:52:16 - INFO - Skipping skip_file.txt because of SkipFileNamesConfig
+2026-01-25 11:52:16 - INFO - Backed up a total of 0 files for the source C:/Users/ryanr/OneDrive/Documentos/DummySRC
+2026-01-25 11:52:16 - INFO - Backing up files from C:/Users/ryanr/OneDrive/Documentos/DummySRC2
+2026-01-25 11:52:16 - INFO - Backed up a total of 0 files for the source C:/Users/ryanr/OneDrive/Documentos/DummySRC2
