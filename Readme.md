@@ -2,7 +2,8 @@
 
 ./build.sh
 
-But first, you need to run "chmod +x build.sh" one time on fresh clone
+But first, you need to run "chmod +x build.sh" one time on fresh clone.
+The exe files are generate in root/dist
 
 # What you can improve 
 
