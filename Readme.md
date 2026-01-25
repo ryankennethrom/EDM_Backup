@@ -1,6 +1,6 @@
 # About
 
-Automate moving files from folder to folder or drive to drive using a simple interface.
+Automate moving files from folder to folder or drive to drive using a simple ui.
 
 # Developer Help
 
