@@ -121,3 +121,26 @@
 2026-01-24 19:15:45 - INFO - Resolving file inclusion
 2026-01-24 19:15:45 - INFO - Backing up from C:\Users\ryanr\OneDrive\Documentos\DummySRC2\adawddYOSHAAAAaddwda.txt to C:/Users/ryanr/OneDrive/Documentos/Yosha Files\2026\adawddYOSHAAAAaddwda.txt
 2026-01-24 19:15:45 - INFO - Backed up a total of 1 files for the source C:/Users/ryanr/OneDrive/Documentos/DummySRC2
+2026-01-24 19:28:06 - INFO - Backing up files from C:/Users/ryanr/OneDrive/Documentos/DummySRC
+2026-01-24 19:28:06 - INFO - Backing up C:\Users\ryanr\OneDrive\Documentos\DummySRC\adw.txt
+2026-01-24 19:28:06 - INFO - Resolving directory
+2026-01-24 19:28:06 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-24 19:28:06 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-24 19:28:06 - INFO -  ===PatternDestinationConfig===>  ===DefaultDestinationConfig===>  ===OrganizeByCurrentYearConfig===>  ===OrganizeByCreatedYearConfig===> 
+2026-01-24 19:28:06 - INFO - Resolving filename
+2026-01-24 19:28:06 - INFO -  ===ReplaceFilesConfig===> adw.txt
+2026-01-24 19:28:06 - INFO - Resolving file inclusion
+2026-01-24 19:28:06 - ERROR - Failed to back up the file. Could not resolve destination. Notify Ryan or whoever is maintaining the backup scripts. Press enter to continue.
+2026-01-24 19:28:11 - INFO - Skipping adw.txt because of SkipDestinationUndefinedConfig
+2026-01-24 19:28:11 - INFO - Backing up C:\Users\ryanr\OneDrive\Documentos\DummySRC\skip_file.txt
+2026-01-24 19:28:11 - INFO - Resolving directory
+2026-01-24 19:28:11 - INFO - Warning: OrganizeByCurrentYearConfig encounted the invalid directory: 
+2026-01-24 19:28:11 - INFO - Warning: OrganizeByCreatedYearConfig encountered the invalid directory: 
+2026-01-24 19:28:11 - INFO -  ===PatternDestinationConfig===>  ===DefaultDestinationConfig===>  ===OrganizeByCurrentYearConfig===>  ===OrganizeByCreatedYearConfig===> 
+2026-01-24 19:28:11 - INFO - Resolving filename
+2026-01-24 19:28:11 - INFO -  ===ReplaceFilesConfig===> skip_file.txt
+2026-01-24 19:28:11 - INFO - Resolving file inclusion
+2026-01-24 19:28:11 - INFO - Skipping skip_file.txt because of SkipFileNamesConfig
+2026-01-24 19:28:11 - INFO - Backed up a total of 0 files for the source C:/Users/ryanr/OneDrive/Documentos/DummySRC
+2026-01-24 19:28:11 - INFO - Backing up files from C:/Users/ryanr/OneDrive/Documentos/DummySRC2
+2026-01-24 19:28:11 - INFO - Backed up a total of 0 files for the source C:/Users/ryanr/OneDrive/Documentos/DummySRC2
